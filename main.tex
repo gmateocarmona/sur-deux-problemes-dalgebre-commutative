@@ -1,1 +1,256 @@
+\documentclass[12pt,twoside]{report} %openright
+	%\usepackage[utf8]{inputenc}
+ 	\usepackage[greek,english]{babel}
+    \usepackage{yfonts}
+	\usepackage{latexsym}
+	\usepackage{amsmath}
+	\usepackage{amssymb}
+	\usepackage{amsthm}
+	\usepackage{stmaryrd}
+	\usepackage{pb-diagram}
+	\usepackage{amscd}
+	\usepackage{mathrsfs}
+	\usepackage{enumerate}
+	\usepackage{color}
+	\usepackage{cite}
+	%\usepackage{graphicx}
+	\usepackage[all]{xy}
+	
+	 
+	\usepackage{graphicx}
+\graphicspath{ {./images/} }
+	
+	%\usepackage{fixltx2e}
+	\usepackage{extarrows}
+	\usepackage{datetime}
+	\usepackage{mathtools}
+    \usepackage{remreset}
+    \usepackage{afterpage}
+    \usepackage{verbatim}
 
+    \usepackage[svgnames]{xcolor}
+	\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=[RGB]{61,82,62},
+    filecolor=[RGB]{61,82,62},
+    urlcolor=[RGB]{61,82,62},
+    citecolor=[RGB]{61,82,62},
+    pdftitle={Seydi, Hamet. Sur deux problèmes d'Algèbre Commutative. Mathématiques. Faculté des sciences d'Orsay, 1973. Français},
+    pdfauthor={Alexander Grothendieck},
+    pdflang={fr}
+}
+
+\usepackage{bookmark}
+    %\usepackage{csquotes}
+    \usepackage{etoc}
+
+\usepackage{pdflscape}
+	
+	\usepackage{fontspec}
+	\setmainfont{EB Garamond}
+	\usepackage{float}
+	\usepackage[12pt]{moresize}
+	\usepackage{titlesec}
+	\usepackage[twoside,top=1.5in,bottom=1.5in,left=1in,right=1.3in,headheight=16pt,headsep=30pt,footskip=40pt]{geometry}
+
+	\linespread{1.25}
+%	\linespread{1.05}
+
+
+%\NeedsTeXFormat{LaTeX2e}
+%\ProvidesPackage{quiver}[2021/01/11 quiver]
+\RequirePackage{tikz-cd}
+\RequirePackage{amssymb}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathmorphing}
+
+
+% A TikZ style for curved arrows of a fixed height, due to AndréC.
+\tikzset{curve/.style={settings={#1},to path={(\tikztostart)
+    .. controls ($(\tikztostart)!\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+    and ($(\tikztostart)!1-\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+    .. (\tikztotarget)\tikztonodes}},
+    settings/.code={\tikzset{quiver/.cd,#1}
+        \def\pv##1{\pgfkeysvalueof{/tikz/quiver/##1}}},
+    quiver/.cd,pos/.initial=0.35,height/.initial=0}
+
+% TikZ arrowhead/tail styles.
+\tikzset{tail reversed/.code={\pgfsetarrowsstart{tikzcd to}}}
+\tikzset{2tail/.code={\pgfsetarrowsstart{Implies[reversed]}}}
+\tikzset{2tail reversed/.code={\pgfsetarrowsstart{Implies}}}
+% TikZ arrow styles.
+\tikzset{no body/.style={/tikz/dash pattern=on 0 off 1mm}}
+
+	% use osf for figures in math mode
+	\DeclareSymbolFont{digits}{\encodingdefault}{\rmdefault}{m}{n}
+	\SetSymbolFont{digits}{normal}{\encodingdefault}{\rmdefault}{m}{n}
+	\DeclareMathSymbol{0}{\mathalpha}{digits}{"30}
+	\DeclareMathSymbol{1}{\mathalpha}{digits}{"31}
+	\DeclareMathSymbol{2}{\mathalpha}{digits}{"32}
+	\DeclareMathSymbol{3}{\mathalpha}{digits}{"33}
+	\DeclareMathSymbol{4}{\mathalpha}{digits}{"34}
+	\DeclareMathSymbol{5}{\mathalpha}{digits}{"35}
+	\DeclareMathSymbol{6}{\mathalpha}{digits}{"36}
+	\DeclareMathSymbol{7}{\mathalpha}{digits}{"37}
+	\DeclareMathSymbol{8}{\mathalpha}{digits}{"38}
+	\DeclareMathSymbol{9}{\mathalpha}{digits}{"39}
+	% helvetica for sans in math
+	\DeclareMathAlphabet{\mathsf}{\encodingdefault}{phv}{m}{n}
+	%\usepackage{showkeys}
+	%\usepackage{showframe}
+	\usepackage{fancyhdr}
+	%\fancyhead[CO]{\rightmark}
+	\fancyhead[CO]{}
+	%\fancyhead[CE]{\leftmark}
+	\fancyhead[CE]{}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{}
+	\fancyhead[LE]{}
+	\cfoot{\thepage}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\titleformat\section{\normalfont\Large\centerline{\hss\rule{1.3in}{.01in}\hss}}{\thesection}{1em}{}
+    \titleformat{\chapter}[display]{}{\huge\filcenter { \thechapter}}{12pt}{\large \filcenter}
+
+%\newcommand\hmmax{0}
+%\newcommand\bmmax{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	% arrows
+	\newcommand{\xto}{\xrightarrow}
+	\renewcommand{\to}{\longrightarrow}
+	\def\rinto{\HorizontalMap\rthooka-\empty-\rhla}
+	\def\linto{\HorizontalMap\lhla-\empty-\lthooka}
+	\def\dinto{\VerticalMap\dthookb|\empty|\dhla}
+	\def\uinto{\VerticalMap\uhla|\empty|\uthookb}
+
+	% categories
+	\def\cC{{\cal C}}
+	\def\cF{{\cal F}}
+	\def\cG{{\cal G}}
+	\def\cH{{\cal H}}
+	\def\cU{{\cal U}}
+
+	% operators
+	\DeclareMathOperator{\Hom}{Hom}
+	\DeclareMathOperator{\Aut}{Aut}
+	\DeclareMathOperator{\Is}{Is}
+
+	% symbols
+	\renewcommand{\emptyset}{\varnothing}
+	\renewcommand{\phi}{\varphi}
+	\newcommand{\und}{\underline}
+
+	% environments
+	\theoremstyle{plain}
+		\newtheorem{lemma}{Lemma}[section]
+		\newtheorem{corollary}[lemma]{Corollary}
+		\newtheorem{proposition}[lemma]{Proposition}
+		\newtheorem{theorem}[lemma]{Theorem}
+		\newtheorem*{theorem*}{Theorem}
+		\newtheorem*{corollary*}{Corollary}
+		\newtheorem{conjecture}{Conjecture}
+	\theoremstyle{definition}
+		\newtheorem{definition}[lemma]{Definition}
+		\newtheorem{example}[lemma]{Example}
+		\newtheorem{remark}[lemma]{Remark}
+		\newtheorem{construction}[lemma]{Construction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\newcommand*{\toccontents}{\@starttoc{toc}}
+\makeatother
+
+\makeatletter
+\@addtoreset{footnote}{section}
+\makeatother
+
+%\usepackage{sectsty}
+%\partfont{\LARGE}
+
+\begin{document}
+\setcounter{tocdepth}{2}
+\sloppy
+
+\newgeometry{left=1.5in,right=1.5in, bottom=1.5in}
+
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+    {\Huge Sur deux problèmes} \\
+    \vspace{0.5em}
+    {\Huge d'Algèbre Commutative}
+\end{center}
+\vspace*{\fill}
+\noindent\makebox[\linewidth]{\rule{1.3in}{0.01in}}
+\vspace*{\fill}
+\begin{center}
+    {\Large par} \\
+    \vspace{0.5em}
+    {\huge Hamet Seydi}
+\end{center}
+\vspace*{\fill}
+% \begin{center}
+%    {\Large Transcription by} \\
+%    \vspace{1.1em}
+%    \includegraphics[width=70mm]{logo.pdf}
+%\end{center}
+%\vspace*{\fill}
+
+
+%\begin{tikzpicture}[remember picture,overlay]
+%    \draw[line width=10pt,color=DarkKhaki]
+%        ([shift={(-0.5\pgflinewidth,-0.5\pgflinewidth)}]current page.north west)
+%        rectangle
+%        ([shift={(0.5\pgflinewidth,0.5\pgflinewidth)}]current page.south east);
+%\end{tikzpicture}
+
+
+\newpage 
+\thispagestyle{empty}
+
+\begin{center}
+Sur deux problèmes d'Algèbre Commutative, Hamet Seydi
+\end{center}
+
+\vspace*{\fill}
+
+This transcription is derived from an unpublished scan. This project was carried out by researchers and volunteers under the supervision of Mateo Carmona.
+
+\bigskip
+
+How to cite:
+
+Seydi, Hamet. Sur deux problèmes d'Algèbre Commutative. Mathématiques. Faculté des sciences d'Orsay, 1973. Français. Transcription by M. Carmona et al. Draft, \monthname[\the\month] \the\year.
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+%\pagestyle{fancyplain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{these}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+%\thispagestyle{empty}
+\mbox{}
+\thispagestyle{empty}
+%\begin{tikzpicture}[remember picture,overlay]
+%    \draw[line width=10pt,color=DarkKhaki]
+%        ([shift={(-0.5\pgflinewidth,-0.5\pgflinewidth)}]current page.north west)
+%        rectangle
+%        ([shift={(0.5\pgflinewidth,0.5\pgflinewidth)}]current page.south east);
+%\end{tikzpicture}
+
+\end{document}
+
+
+
+%End
