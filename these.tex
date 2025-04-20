@@ -38,7 +38,49 @@ Nos principales interventions dans cette théorie consistent essentiellement en 
 \subsection*{I. Finitude de la fermeture intégrale}\label{sec:1}%
 \addcontentsline{toc}{section}{I. Finitude de la fermeture intégrale}
 
+{
+Théorème 1. --- \it Soit $A$ un anneau semi-local noethérien. Alors, les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[i)] Pour tout anneau quotient intègre $B$ de $A$, la clôture intégrale $\overline{B}$ de $B$ est un $B$-module de type fini.
+    \item[ii)] Pour tout anneau quotient intègre $\overline{B}$ de $B$, la complété $\widehat{B}$ de $B$ est réduit.
+\end{enumerate}
+}
+\vskip .3cm
+
 % page 3 missing
+
+conclusion du théorème 3, hypothèse qui est plus forte que la conjonction de nos hypothèses i) et ii).
+
+Le raisonnement qui nous sert à prouver ce théorème permet de simplifier la démonstration de Zariski du théorème suivant~:
+\vskip .3cm
+{
+Théorème 4 (Zariski). --- \it Soient $A$ un anneau semi-local noethérien intègre dont le séparé complété $\widehat{A}$ est normal et $B$ une $A$-algèbre finie intègre contenant $A$ et dont le corps des fractions est une extension séparable de celui de $A$. On suppose que, pour tout idéal premier $p$ de hauteur 1 de $B$, le séparé complété $\widehat{B}$ de $B$ est normal.
+}
+Le même raisonnement permet de simplifier et de généraliser sous la forme suivante, le théorème de ``pureté'' de \emph{Zariski-Nagata}.
+\vskip .3cm
+{
+Théorème 5. --- \it Soient $S$ un schéma localement noethérien, $\psi: X \to S$ un morphisme fini et $x$ un point de $X$. On suppose vérifiées les conditions suivantes :
+\begin{enumerate}
+    \item[i)] $\mathcal{O}_{S, \psi(x)}$ est un anneau local régulier.
+    \item[ii)] $x$ est un point unibranche de $X$ où $X$ vérifie ($S_1$).
+    \item[iii)] $$\dim(\mathcal{O}_{X, x}) = \dim(\mathcal{O}_{S, \psi(x)})$$ (condition qui est satisfaite lorsque $X$ et $S$ sont intègres et $\psi$ dominante).
+    \item[iv)] $\psi$ est non ramifié en toute généralisation $x'$ de $x$ dans $X$ telle que $$\dim(\mathcal{O}_{X, x'}) \leq 1$$.
+\end{enumerate}
+Alors $\psi$ est étale au point $x$, donc aussi dans un voisinage de $x$ dans $X$.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau local régulier henselien et $B$ une $A$-algèbre intègre finie contenant $A$. On suppose que le morphisme canonique $\psi: \text{Spec}(B) \to \text{Spec}(A)$ est non ramifié en tout point $x$ de $\text{Spec}(B)$ de codimension $ \leq 1$ dans $\text{Spec}(B)$. Alors, $B$ est une $A$-algèbre étale.
+}
+\vskip .3cm
+{
+Théorème 6. --- \it Soient $A$ un anneau noethérien et $x$ un élément appartenant au radical de \emph{Jacobson} de $A$. On suppose vérifiées l'une des conditions suivantes~:
+\begin{enumerate}
+    \item[i)] Pour tout idéal maximal $m$ de $A$, l'anneau local $B = A_m$ est intègre et sa clôture intégrale $\overline{B}$ est un $B$-module de type fini et, pour tout idéal premier minimal $p'$ de $x\overline{B}$, $p' \bigcap A$ est un idéal premier de hauteur 1 (lorsque $A$ est un universellement caténaire, cette dernière condition est équivalente à $ht(x \overline{B}) = 1$ et, puisque $B$ est intègre, cela signifie que l'image de $x$ dans $\overline{B}$ est différente de 0).
+    \item[ii)] Pour tout idéal maximal $m$ de $A$, l'anneau local $B = A_m$ est intègre et $B^{(1)}$ (notation de [4], 5.10.17]) est un $B$-module de type fini.
+    \item[iii)] $A$ est caténaire et vérifié ($S_1$) et, pour tout idéal maximal $m$ de $A$, l'anneau local $B = A_m$ est équidimensionnel et, pour tout idéal premier minimal $q$ de $B = A_m$, posant $B_0 = B/q$, l'anneau $B_0^{(1)}$ est un $B_0$-module de type fini.
+\end{enumerate}
+On suppose, plus, vérifiées les deux conditions suivantes~:
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{II. Anneaux japonais}\label{sec:2}%
