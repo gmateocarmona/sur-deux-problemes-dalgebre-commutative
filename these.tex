@@ -81,6 +81,83 @@ Théorème 6. --- \it Soient $A$ un anneau noethérien et $x$ un élément appar
     \item[iii)] $A$ est caténaire et vérifié ($S_1$) et, pour tout idéal maximal $m$ de $A$, l'anneau local $B = A_m$ est équidimensionnel et, pour tout idéal premier minimal $q$ de $B = A_m$, posant $B_0 = B/q$, l'anneau $B_0^{(1)}$ est un $B_0$-module de type fini.
 \end{enumerate}
 On suppose, plus, vérifiées les deux conditions suivantes~:
+\begin{itemize}
+    \item[a)] $xA$ n'a qu'un seul idéal premier minimal $p$, $xAp = pAp$ et $\dim(Ap) = 1$.
+    \item[b)] $A/p$ est intégralement clos.
+\end{itemize}
+Alors $A$ est intègre et intégralement clos, $p = xA$ et $\dim(A/xA) = \dim(A) - 1$.
+}
+\vskip .3cm
+La démonstration du théorème 6 s'appuie sur le lemme suivant dû à l'auteur et à F. \emph{Ferrand}.
+\vskip .3cm
+{
+Lemme. --- \it Soient $A$ un anneau noethérien et $x$ un élément de $A$ tel que $p = xA$ soit un idéal premier non minimal. Alors les conditions suivantes sont équivalentes :
+\begin{itemize}
+    \item[i)] $A$ est intègre.
+    \item[ii)] $A$ est séparé pour la topologie $p$-adique.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire. --- Soit \it $A$ un anneau noethérien. S'il existe un idéal premier de $A$ non minimal qui est monogène et contenu dans le radical de \emph{Jacobson} de $A$, alors $A$ est intègre.
+}
+\vskip .3cm
+{\bf Remarque} : Le théorème 6 avec des hypothèses plus fortes est contenu dans la littérature sous le nom de ``lemme de \emph{Hironaka}''. En fait Hironaka l'a prouvé pour une $A$-algèbre intégrale essentiellement de type fini sur un corps, dans son article : ``A note on algebraic geometry over ground rings --- the invariance of Hilbert characteristic function under the specialization process'', Illinois Journal of Math. 2(1958) p. 355-356, \emph{Nagata} l'a établi sous l'hypothèse (i) en supposant de plus, $A$ intègre (cf. [10] 36.9 p. 134) et \emph{Grothendieck} ([4] 5.12.8) sous l'hypothèse (iii) en supposant de plus, $A$ local et réduit.
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien et $x$ un élément de $A$, tel que $p = xA$ soit un idéal premier non minimal de $A$ contenu dans le radical de \emph{Jacobson} de $A$ et que $A/p$ soit intégralement clos. Alors, $A$ est intègre et intégralement clos.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien caténaire et $x_1,\cdots,x_n$ des éléments appartenant au radical de \emph{Jacobson} de $A$. On suppose que $\mathrm{ht} \left( \sum_{1 \leq i \leq n} x_i A \right) = n$ et que $a = \sum_{1 \leq i \leq n} x_i A$ n'a qu'un seul idéal premier minimal $p$, $pAp = aAp$ et $\mathrm{ht}(p) = n$
+
+On suppose, de plus, satisfaites les conditions suivantes~:
+\begin{itemize}
+    \item[i)] $A$ satisfait à l'une des conditions (i),(ii), et (iii) du théorème 6 et tout anneau quotient intègre $B = A/q$ avec $q \subset p$ satisfait à l'une des conditions (i),(ii) et (iii) du théorème 6
+    \item[ii)] $A/p$ est intégralement clos.
+\end{itemize}
+Alors $A$ est intègre et intégralement clos et $p = \sum_{1 \leq i \leq n} x_i A$.
+
+En outre, pour tout entier $i \, , (1 \leq i \leq n)$, l'anneau quotient $A_i = A/ \sum_{1 \leq i \leq n} aj A$ est intègre et intégralement clos et $\dim(Ai) = \dim(A) - i$.
+}
+\vskip .3cm
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien et $x_1,\cdots,x_n$ des éléments appartenant au radical de \emph{Jacobson} de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[i)] Pour tout point fermé $s$ de $S = \Spec(A)$ l'anneau local $\mathcal{O}_{S,s}$ est équidimensionnel.
+    \item[ii)] $\mathrm{ht} \left( \sum_{1 \leq i \leq n} ai A \right) = a $, $a = \sum_{1 \leq i \leq n} ai A$ si $a$ n'a qu'un seul idéal premier minimal $p$, $pAp = aAp$ et $A/p$ est intégralement clos.
+    \item[iii)] $A$ vérifie $(S_1)$.
+\end{itemize}
+On suppose de plus que l'une des conditions suivantes est satisfaite~:
+\begin{itemize}
+    \item[a)] $A$ est quotient d'un anneau de \emph{Cohen-Macualey}
+    \item[b)] $A$ est universellement caténaire et, pour tout anneau quotient intègre, $B = A/q$ de $A$, avec $q \subset p$ et tout idéal maximal $m$ de $B$, la clôture intégrale de l'anneau local $B_m$ est un $B_m$-module de type fini.
+\end{itemize}
+Alors $A$ est intègre et intégralement clos et $p = \sum_{1 \leq i \leq n} xi A$.
+}
+\vskip .3cm
+En outre, pour tout entier $i \, (1 \leq i \leq n)$, l'anneau quotient $A_i = A/ \sum_{1 \leq j \leq n} xjA$ est intègre et intégralement clos et $\dim(A_i) = \dim(A) - i$.
+\vskip .3cm
+{
+Théorème 7. --- \it Soient $A$ un anneau noethérien intègre et $x$ un élément de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A$ est séparé et complet pour la topologie $xA$-adique
+    \item[(ii)] $xA$ n'a qu'un seul idéal premier minimal $p$ et, si $\overline{A}$ désigne la clôture intégrale de $A$, pour tout idéal premier minimal $p'$ de $x\overline{A}$, on a $p' \bigcap A = p$.
+    \item[(iii)] La clôture intégrale de l'anneau quotient $A/p$ est un $A/p$-module de type fini.
+\end{itemize}
+Alors la clôture intégrale $\overline{A}$ de $A$ est un $A$-module de type fini.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien et $x$ un élément de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A$ est séparé et complet pour la topologie $xA$-adique.
+    \item[(ii)] $xA$ n'a qu'un seul idéal premier minimal $p$.
+    \item[(iii)] $A/p$ est intégralement clos et, pour tout idéal premier $p'$ de hauteur $1$ de la clôture intégrale de $A$ contenant $x$ on a $p' \bigcap A = p$.
+\end{itemize}
+Alors $A$ est intégralement clos et $p = xA$.
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{II. Anneaux japonais}\label{sec:2}%
