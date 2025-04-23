@@ -1,8 +1,6 @@
 %Begin
 
 
-
-
 \setcounter{page}{1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{INTRODUCTION}\thispagestyle{empty}
@@ -213,6 +211,66 @@ Alors, pour que les fibres formelles de $A/I$ soient géométriquement réguliè
 \subsection*{V. Anneaux de Weierstrass}\label{sec:5}%
 \addcontentsline{toc}{section}{V. Anneaux de Weierstrass}
 
+{
+Définition. --- \it On dit qu’un anneau $A$ est un anneau de \emph{Weierstrass} si $A$ vérifie les trois conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A$ est un anneau semi-local noethérien hensélien
+    \item[(ii)] $A$ est un anneau universellement japonais
+    \item[(iii)] Pour tout anneau quotient intègre $B$ de $A$, il existe un sous-anneau local régulier $B'$ de $B$, tel que $B$ soit un $B'$-module de type fini.
+\end{itemize}
+}
+\vskip .3cm
+Par exemple, tout anneau semi-local noethérien complet est un anneau de \emph{Weierstrass} excellent (\emph{Nagata}).
+\vskip .3cm
+{
+Théorème 32. --- \it Soient $A$ un anneau de \emph{Weierstrass} local, $k$ son corps résiduel et $p$ l’exposant caractéristique de $A$. Si $\left[ k : k^p \right] < +\infty$, alors $A$ est un anneau excellent.
+}
+\vskip .3cm
+Soit $K$ un corps valué. On dit que $K$ est quasicomplet si le complété $K'$ de $K$ est une extension séparable de $K$. Dans son article (6) L. \emph{Gerritzen} a montré que, pour que l’anneau des séries convergentes $K \left\{ \{ T \} \right\}$ à une variable sur un corps valué $K$ soit un anneau de \emph{Weierstrass}, il faut et il suffit que $K$ soit quasi-complet et, dans ce cas, tout anneau analytique sur $K$ est un anneau de \emph{Weierstrass}.
+
+On en conclut donc que, si $K$ est un corps valué quasi-complet d’exposant caractéristique $p$, tel que $$\left[ K : K^p \right] < +\infty$$ alors tout anneau analytique sur $K$ est un anneau de \emph{Weierstrass} excellent, donc, compte tenu du théorème 22, on a le~:
+\vskip .3cm
+{
+Théorème 33. --- \it Soient $K$ un corps valué quasi-complet d’exposant caractéristique $p$, tel que $$\left[ K : K^p \right] < +\infty$$, $A$ un anneau de séries convergentes sur $K$ et $$A' = A \left[ T_1, \ldots, T_r \right]$$ un anneau de polynômes à un nombre fini de variables sur $K$. Alors $A$ vérifie la condition $(J_k)$ du théorème 29.
+}
+\vskip .3cm
+{
+Théorème 34. --- \it Soient $K$ un corps valué parfait et $A$ et $A'$ deux anneaux analytiques sur $K$. On suppose que $A$ et $A'$ sont intègres et intégralement clos. Alors le produit tensoriel analytique de $A$ et $A'$ (cf. [10] 47 p. 199) est intègre et intégralement clos.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $X$ et $Y$ deux schémas affines de type fini sur un corps $k$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] Chacun des schémas $X$ et $Y$ possède un point rationnel sur $k$.
+    \item[(ii)] $X$ et $Y$ sont normaux.
+\end{itemize}
+Alors $X \times_k Y$ est un schéma intègre et normal.
+}
+\vskip .3cm
+{
+Définition. --- \it Soit $A = K \left[ \left[ T_1, \ldots, T_n \right] \right]$ l’anneau des séries formelles à $n$ variables sur un corps $K$. On appelle série formelle algébrique à $n$ variables sur $K$, toute série formelle $f \in A$ qui est algébrique sur l’anneau des polynômes $K \quad T_1, \ldots, T_n $.
+
+L’ensemble des séries formelles algébriques à $n$ variables sur $K$ est le hensélisé $K \quad T_1, \ldots, T_n $ de l'anneau local à l’origine de $X = \Spec \left( K \left[ T_1, \ldots, T_n \right] \right)$.
+}
+\vskip .3cm
+{
+Théorème 35. --- \it Soient $K$ un corps et $A = K \left[ T_1, \ldots, T_n \right]$ l’anneau des séries formelles algébriques sur $K$. Alors $A$ est un anneau de \emph{Weierstrass} local régulier et excellent de dimension $n$, dont le complété est l’anneau des séries formelles $K \left[ \left[ T_1, \ldots, T_n \right] \right]$.
+
+En outre, pour tout idéal $a$ (non nécessairement premier), il existe un sous-anneau $B$ contenant $K$ de l’anneau quotient $B' = A/a$ qui est $K$-isomorphe à l'anneau des séries formelles algébriques à $s = \left( \dim B' \right)$ variables sur $K$, tel que $B'$ soit un $B$-module de type fini.
+}
+\vskip .3cm
+{
+Théorème 36. --- \it Soient $K$ un corps, $A$ et $B$ deux $K$-algèbres locales noethériennes qui sont $K$-isomorphes à des algèbres finies sur des anneaux de séries formelles algébriques sur $K$ et $\psi : A \to B$ un $K$-homomorphisme local. Alors, les deux conditions suivantes sont équivalentes~:
+\begin{itemize}
+    \item[(i)] $\psi$ fait de $B$ un $A$-module quasi fini.
+    \item[(ii)] $\psi$ est un homomorphisme fini.
+\end{itemize} 
+\vskip .3cm
+{
+Théorème 37. --- \it Soit $K$ un corps. Alors tout anneau de séries formelles algébriques sur $K$ vérifie la condition $(J_k)$ du théorème 28.
+}
+\vskip .3cm
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{ADDENDA}\thispagestyle{empty}
 \addcontentsline{toc}{section}{Addenda}
@@ -273,25 +331,17 @@ Quant aux autres théorèmes du chapitre, leurs démonstrations paraîtront dans
 
 \end{thebibliography}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{SUR LE PROBLÈME DE CHAÎNES D’IDÉAUX PREMIERS DANS LES ANNEAUX NOETHÉRIENS}\thispagestyle{empty}
 \addcontentsline{toc}{chapter}{Sur le problème des chaînes d'idéaux premiers dans les anneaux noethériens}
 \label{sec:b}
 \section*{}
 
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{NOTE}\thispagestyle{empty}
 \addcontentsline{toc}{section}{Note}
 \label{sec:n2}
 \section*{}
-
-
-
 
 
 %End
