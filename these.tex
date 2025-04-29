@@ -161,6 +161,61 @@ Alors $A$ est intégralement clos et $p = xA$.
 \subsection*{II. Anneaux japonais}\label{sec:2}%
 \addcontentsline{toc}{section}{II. Anneaux japonais}
 
+\vskip .3cm
+{
+Définition. --- \it On dit qu'un anneau $A$ est un anneau japonais si $A$ est intègre et si, pour toute extension finie $K'$ du corps des fractions $K$ de $A$, la fermeture intégrale $A'$ de $A$ dans $K'$ est un $A$-module de type fini.
+}
+\vskip .3cm
+{
+Théorème 8. --- \it Soient $A$ un anneau noethérien intègre et $x$ un élément de $A$. On suppose vérifiées les deux conditions suivantes~:
+\begin{itemize}
+    \item[i)] $p = xA$ est un idéal premier et $A$ est séparé et complet pour la topologie $p$-adique.
+    \item[ii)] $A/p$ est un anneau japonais.
+\end{itemize}
+Alors, $A$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soit $A$ un anneau japonais noethérien. Alors tout anneau de séries formelles $B = A \left[ \left[ T_1, \ldots, T_r \right] \right]$ à un nombre fini de variables sur $A$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau local noethérien intègre et complet. Alors tout anneau de séries restreintes (pour la topologie définie par l'idéal maximal de $A$) $B = A \left\{ T_1, \ldots, T_r \right\}$ à un nombre fini de variables sur $A$ est un anneau japonais.
+}
+\vskip .3cm
+{\bf Remarque}~: Le théorème 8 a été prouvé par \emph{Tate} avec l'hypothèse supplémentaire~: $A$ est intégralement clos.
+\vskip .3cm
+{
+Théorème 9. --- \it Soient $A$ un anneau japonais noethérien et $B$ une algèbre intègre de type fini contenant $A$, telle que le morphisme canonique $\psi: \Spec(B) \to \Spec(A)$ soit universellement ouvert en tout point fermé de $\Spec(B)$. Alors $B$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau japonais noethérien et $B$ une $A$-algèbre intègre de type fini contenant $A$, telle que le morphisme canonique $\psi: \Spec(B) \to \Spec(A)$ soit plat. Alors $B$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Théorème 10. --- \it Soient $A$ un anneau noethérien intègre, $K$ son corps des fractions, $K'$ une extension finie de $K$ et $A'$ la fermeture intégrale de $A$ dans $K'$.
+\begin{itemize}
+    \item[(i)] On suppose qu'il existe un anneau noethérien d'anneau total des fractions $R$ qui vérifie les trois conditions suivantes~:
+    \begin{itemize}
+        \item[a)] $B$ est une $A$-algèbre fidèlement plate
+        \item[b)] $R \otimes_A K'$ est un anneau réduit
+        \item[c)] Pour tout idéal premier minimal $p$ de $B$, l'anneau quotient $B/p$ est un anneau japonais
+    \end{itemize}
+    Alors $A'$ est un $A$-module de type fini.
+    \item[(ii)] En particulier, s'il existe un anneau noethérien $B$ qui vérifie les conditions a) et c) de i) et dont l'anneau total des fractions $R$ est une $K$-algèbre séparable, alors $A$ est un anneau japonais.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau local régulier intègre et $A'$ son hensélisé (resp. son hensélisé strict). Si $A$ est un anneau japonais unibranche (resp. géométriquement unibranche), il en est de même de $A'$.
+
+Réciproquement, si $A$ est noethérien et si $A'$ est un anneau japonais, alors $A$ est un anneau japonais unibranche (resp. géométriquement unibranche).
+}
+\vskip .3cm
+
+%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{III. Anneaux excellents}\label{sec:3}%
 \addcontentsline{toc}{section}{III. Anneaux excellents}
@@ -206,6 +261,8 @@ Alors, pour que les fibres formelles de $A/I$ soient géométriquement réguliè
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{IV. Anneaux excellents et critères jacobiens}\label{sec:4}%
 \addcontentsline{toc}{section}{IV. Anneaux excellents et critères jacobiens}
+
+%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{V. Anneaux de Weierstrass}\label{sec:5}%
@@ -290,8 +347,7 @@ Théorème $1'$. --- \it Soient $k$ un corps, $p$ son exposant caractéristique,
 Théorème $2'$. --- \it Soient $k$ un corps, $p$ son exposant caractéristique, $$A = k[[X_1, \ldots, X_r]]$$ un anneau de séries formelles à un nombre fini de variables sur $k$ et $$B = A\{  X_1, \ldots, X_s \}$$ un anneau de séries restreintes sur $A$ (pour la topologie précédente). Si $[k : k^p] < +\infty$ alors tout anneau de polynômes à un nombre fini de variables sur B satisfait à la condition $(J_1)$.
 }
 \vskip .3cm
-{
-\textbf{Remarque}~: Le théorème $1'$, sous la condition : ``$k$ est de caractéristique zéro'', est connu par \emph{H. Matsumura} qui l’a utilisé pour prouver que le séparé complet pour une topologie linéaire d’une algèbre de type fini sur un corps de caractéristique $0$ est un anneau excellent.
+{\bf Remarque}~: Le théorème $1'$, sous la condition~: ``$k$ est de caractéristique zéro'', est connu par \emph{H. Matsumura} qui l’a utilisé pour prouver que le séparé complet pour une topologie linéaire d’une algèbre de type fini sur un corps de caractéristique $0$ est un anneau excellent.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{NOTE}\thispagestyle{empty}
