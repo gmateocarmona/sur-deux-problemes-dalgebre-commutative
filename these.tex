@@ -213,8 +213,73 @@ Corollaire. --- \it Soient $A$ un anneau local régulier intègre et $A'$ son he
 Réciproquement, si $A$ est noethérien et si $A'$ est un anneau japonais, alors $A$ est un anneau japonais unibranche (resp. géométriquement unibranche).
 }
 \vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien intègre, $K$ son corps des fractions et $x$ un élément de $A$ appartenant au radical de \emph{Jacobson} de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A/xA$ est un anneau japonais
+    \item[(ii)] L'anneau total des fractions du séparé complet de $A$ pour la topologie $xA$-adique est une $K$-algèbre séparable.
+\end{itemize}
+Alors, $A$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien intègre dont le corps des fractions est de caractéristique 0 et $x$ un élément de $A$ appartenant au radical de \emph{Jacobson} de $A$. Si $A/xA$ est un anneau japonais, alors $A$ est un anneau japonais.
+}
+\vskip .3cm
+{\bf Remarque}~: Le théorème 10 a été prouvé par \emph{Mori} sous les hypothèses~: $A$ est semi-local, $B$ est le séparé complété de $A$ et $K' = K$ et par GROTHENDIECK ([3] 23.1.7]) sous les hypothèses~: $A$ est semi-local et $B$ est le séparé complété de $A$.
 
-%%%%%%%%%
+On peut se poser la question de savoir si, étant donné un anneau semi-local noethérien japonais, l'anneau total des fractions $R$ du séparé complété $\hat{A}$ de $A$ est une $K$-algèbre séparable ($K$ étant le corps des fractions de $A$). Il n'en est rien. On a le théorème suivant~:
+\vskip .3cm
+{
+Théorème 11. --- \it Il existe un anneau local noethérien normal japonais de dimension 3 qui est un anneau de \emph{Gorenstein} de multiplicité 2 et dont le séparé complété n'est pas réduit.
+}
+\vskip .3cm
+{
+Théorème 12. --- \it Soient $A$ un anneau noethérien intègre et $K$ le corps des fractions de $A$. Les conditions suivantes sont équivalentes~:
+\begin{itemize}
+    \item[(i)] $A$ est un anneau japonais et, pour tout idéal maximal $m$ de $A$, l'anneau total des fractions du séparé complété de l'anneau local $A_m$ est une $K$-algèbre séparable,
+    \item[(ii)] Pour toute $A$-algèbre intègre de type fini $B$ contenant $A$, la clôture intégrale de $B$ est un $B$-module de type fini.
+    \item[(iii)] Pour toute $A$-algèbre intègre de type fini $B$ contenant $A$ et dont le corps des fractions est une extension finie de celui de $A$, la clôture intégrale de $B$ est un $B$-module de type fini.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soit $A$ un anneau noethérien intègre qui satisfait aux conditions équivalentes du théorème 12, alors toute $A$-algèbre intégrale de type fini contenant $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Théorème 13. --- \it Soit $A$ un anneau noethérien intègre, qui satisfait aux conditions équivalentes du théorème 12, alors tout anneau de séries formelles $B = A \left[\left[ T_1, \ldots, T_r \right]\right]$ à un nombre fini de variables sur $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Théorème 14. --- \it Soient $A$ un anneau noethérien intègre et $x$ un élément de $A$. On suppose que $A/xA$ est intègre et satisfait aux conditions équivalentes du théorème 12.
+
+On suppose de plus, vérifiée l'une des conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A$ est séparé et complet pour la topologie $xA$-adique
+    \item[(ii)] $A$ est un anneau japonais et $x$ appartient au radical de \emph{Jacobson} de $A$.
+\end{itemize}
+Alors $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau local noethérien intègre et complet, alors, tout anneau de séries restreintes $B = A \{ T_1, \ldots, T_r \}$ à un nombre fini de variables sur $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Théorème 15. --- \it Soient $A$ un anneau japonais régulier, $K$ son corps des fractions et $p$ l'exposant caractéristique de $K$. Si $\left[K : K^p\right] < +\infty$, $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Théorème 16. --- \it Soient $A$ un anneau local noethérien intègre unibranche (resp. géométriquement unibranche) et $A'$ son hensélisé (resp. son hensélisé strict). Alors, pour que $A$ satisfasse aux conditions équivalentes du théorème 12, il faut et il suffit que $A'$ satisfasse aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Définition. --- \it On dit qu'un anneau $A$ est un anneau universellement japonais si toute $A$-algèbre intègre de type fini est un anneau japonais ou, ce qui revient au même, si la clôture intégrale de toute $A$-algèbre intégrale de type fini $B$ est un $B$-module de type fini.
+}
+On peut se demander si un anneau noethérien intègre qui satisfait aux conditions équivalentes du théorème 12 est universellement japonais. Il n'en est rien ; il existe un anneau local régulier de dimension 2 qui satisfait aux conditions équivalentes du théorème 12 et qui n'est pas un anneau universellement japonais (cf. [12]).
+
+En revanche, tout anneau noethérien intègre universellement japonais satisfait aux conditions équivalentes du théorème 12.
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{III. Anneaux excellents}\label{sec:3}%
