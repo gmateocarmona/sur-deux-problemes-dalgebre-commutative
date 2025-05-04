@@ -325,6 +325,73 @@ Alors, pour que les fibres formelles de $A/I$ soient géométriquement réguliè
 \subsection*{IV. Anneaux excellents et critères jacobiens}\label{sec:4}%
 \addcontentsline{toc}{section}{IV. Anneaux excellents et critères jacobiens}
 
+{
+Théorème 21. --- \it Soient $k$ un corps, $p$ son exposant caractéristique et $A$ une $k$-algèbre noethérienne. On suppose vérifiées les deux conditions suivantes~:
+\begin{enumerate}
+    \item[(i)] $\Omega^1_{A/k}$ est un $A$-module projectif.
+    \item[(ii)] Pour tout idéal maximal $m$ de $A$, l'anneau local est une $k$-algèbre formellement lisse pour les topologies préadiques (cette condition est une conséquence de la première lorsque $k$ est parfait).
+\end{enumerate}
+
+Soient $A' = A[T_1, \ldots, T_r]$ un anneau de polynômes à un nombre fini de variables sur $A$, $a$ un idéal de $A'$, $p$ un idéal premier de $A'$ contenant $a$ et $B = A/a$.
+
+\begin{enumerate}
+    \item[I)] Les deux conditions suivantes sont équivalentes~:
+    \begin{enumerate}
+        \item[a)] $Bp$ est une $k$-algèbre formellement lisse pour les topologies préadiques.
+        \item[b)] Il existe des $k$-dérivations $D_1, \ldots, D_s$ de $A'$ dans lui-même et des éléments $f_1, \ldots, f_s$ de $a$ dont les images dans $aAp$ engendrent cet idéal de $Ap$, tels que $\det(\text{Dif}~j) \notin p$.
+    \end{enumerate}
+    \item[II)] Les deux conditions suivantes sont équivalentes~:
+    \begin{enumerate}
+        \item[a')] $Bp$ un anneau local régulier.
+        \item[b')] Il existe un sous-corps $k'$ de $k$ contenant $k^p$, tel que $[k : k'] < +\infty$, des $k'$-dérivations $D_1, \ldots, D_s$ de $A'$ dans lui-même et des éléments $f_1, \ldots, f_s$ de $a$ dont les images dans $aAp$ engendrent cet idéal de $Ap$, tels que $\det(\text{Dif}~j) \notin p$.
+    \end{enumerate}
+\end{enumerate}
+}
+\vskip .3cm
+{
+Corollaire. --- \it Moyennant les notations et les hypothèses du théorème 21, l'anneau $A$ est excellent et l'ensemble des idéaux premiers $n$ de $B$, tels que l'anneau local $B_n$ soit une $k$-algèbre formellement lisse, est ouvert dans $\Spec(B)$.
+}
+\vskip .3cm
+Comme cas particulier du théorème 21, on a le
+{
+Théorème 22. --- \it Soient $k$ un corps parfait de caractéristique $p \neq 0$ et $A$ une $k$-algèbre noethérienne régulière telle que $A^p \to A$ soit un homomorphisme fini. Soient $A' = A[T_1, \ldots, T_r]$ un anneau de polynômes à un nombre fini de variables sur $A$, un idéal de $A'$, $p$ un idéal premier de $A'$ contenant $a$ et $B = A/a$. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[a)] $Bp$ est un anneau local régulier.
+    \item[b)] Il existe des $k$-dérivations $D_1, \ldots, D_s$ de $A'$ dans lui-même et des éléments $f_1, \ldots, f_s$ de $a$ dont les images dans $Ap$ engendrent cet idéal de $Ap$, tels que $\det(\text{Dif}~j) \notin p$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Corollaire. --- \it Moyennant les notations et les hypothèses du théorème 22, l'anneau $A$ est excellent.
+}
+\vskip .3cm
+{
+Théorème 23. --- \it Soient $k$ un corps parfait de caractéristique $p \neq 0$ et $A$ une $k$--algèbre locale régulière. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[(i)] $A$ est un anneau excellent.
+    \item[(ii)] $\Omega^1_{A/k}$ est un $A$-module de type fini.
+    \item[(iii)] $\rang_k(\Omega^1_{A/k} \oplus_k K) = \dim(A)$, où $K$ désigne le corps des fractions de $A$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Théorème 24. --- \it Soient $k$ un corps de caractéristique $p \neq 0$, tel que $$[k : k^p] < +\infty$$ et $A$ une $k$-algèbre locale formellement lisse (pour la topologie préadique) dont le corps résiduel $k_0$ est une extension de type fini de $K$. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[(i)] $A$ est un anneau excellent.
+    \item[(ii)] $\Omega^1_{A/k}$ est un $A$-module de type fini.
+    \item[(iii)] $\rang_k(\Omega^1_{A/k} \oplus_k K) = \dim(A) + \degtr_k(k_0) + \rang(\Omega^1_k)$ où $K$ désigne le corps des fractions de $A$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Théorème 25. --- \it Soient $k$ un corps parfait de caractéristique $p \neq 0$, $A$ une $k$-algèbre noethérienne telle que $A^p \to A$ soit un homomorphisme fini et $x$ un point de $X = \Spec(A)$. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[(i)] $\mathcal{O}_{X, x}$ est un anneau local régulier.
+    \item[(ii)] $(\Omega_{x/k})_x$ est un $\mathcal{O}_{X, x}$--module plat (ou, ce qui revient au même, libre).
+\end{enumerate}
+}
+\vskip .3cm
+
 %%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%
