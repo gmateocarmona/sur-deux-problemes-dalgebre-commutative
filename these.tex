@@ -392,8 +392,123 @@ Théorème 25. --- \it Soient $k$ un corps parfait de caractéristique $p \neq 0
 \end{enumerate}
 }
 \vskip .3cm
+{
+Théorème 26. --- \it Soient $A$ un anneau local noethérien contenant un corps, $B$ un anneau local noethérien et $\psi : A \to B$, un homomorphisme local. Alors les conditions suivantes sont équivalentes~:
+\begin{itemize}
+    \item[(i)] $\psi : \Spec(B) \to \Spec(A)$ est un morphisme régulier, i.e. un morphisme plat à fibres géométriquement régulières.
+    \item[(ii)] $\psi$ fait de $B$ une $A$-algèbre formellement lisse pour les topologies préadiques.
+\end{itemize}
+}
+\vskip .3cm
+{
+Théorème 27. --- \it Soient $A$ un anneau semi-local noethérien et $A'$ son henseélisé strict. Alors, pour que $A'$ soit un anneau excellent, il faut et il suffit que les fibres formelles de $A$ soient géométriquement régulières.
+}
+\vskip .3cm
+{
+Théorème 28. --- \it Soient $k$ un corps d'exposant caractéristique $p$ et $A$ une $k$-algèbre noethérienne. On considère les deux conditions suivantes~:
+\begin{itemize}
+    \item[$(J_k)$]~: Pour tout idéal premier $p$ de $A$, il existe un sous-corps $k'$ contenant $k^p$, tel que $[k : k'] < +\infty$, des $k'$-dérivations $D_1, \dots, D_s$ de $A$ dans lui-même et des éléments $f_1, \dots, f_s$ de $p$, dont les images dans $pAp$ engendrent cet idéal de $Ap$, tels que $\det(Djfi) \notin p$.
+    \item[$(J'_k)$]~: Pour tout idéal $a$ de $A$ et tout idéal premier $p$ de $A$ contenant $a$, tels que $Ap/aAp$ soit un anneau local régulier, il existe un sous-corps $k'$ de $k$ contenant $k^p$, tel que $k : k'$ des $k'$-dérivations $D_1, \dots, D_s$ de $A$ dans lui-même et des éléments $f_1, \dots, f_s$ de $a$ dont les images dans $aAp$ engendrent cet idéal de $Ap$, tels que $\det(Djfi) \notin p$.
+    \item[(i)] Les conditions $(J_k)$ et $(J_k')$ sont équivalentes.
+    \item[(ii)] Si $A$ vérifie $(J_k)$, alors $A$ est un anneau régulier et, pour tout idéal premier $p$ de $A$, les fibres formelles de l'anneau local $Ap$ sont régulières. 
+    
+    Si $A$ vérifie $(J_k)$, tout anneau de fractions $S^{-1}A$ vérifie aussi $(J_k)$.
+    \item[(iii)] Si $A$ vérifie $(J_k)$ et si $k$ est de caractéristique 0, alors $A$ est excellent et tout anneau de polynômes $A' = A[T_1, \dots, T_r]$ à un nombre fini de variables sur $A$ vérifie aussi $(J_k)$
+\end{itemize}
+}
+\vskip .3cm
+{
+Théorème 29. --- \it Soient $k$ un corps de caractéristique 0, $A$ une $k$-algèbre local régulière dont le corps résiduel est une extension algébrique de $k$ et $K$ le corps des fractions de $A$. Si $\rang_K(\Der_k(A, A) \oplus_A K) = \dim (A)$, alors $A$ satisfait à la condition $(J_k)$ du théorème 20.
+}
+\vskip .3cm
+{
+Corollaire 29-1. --- \it Soient $A$ un anneau local noethérien complet contenant un caractéristique 0. Alors tout anneau de séries restreintes $A' = A \{T_1, \dots, T_r\}$ à un nombre fini de variables sur $A$ (pour la topologie préadique de $A$) est un anneau excellent.
+}
+\vskip .3cm
+{
+Corollaire 29-2. --- \it Soient $k$ un corps de caractéristique 0, $A$ une $k$-algèbre local noethérienne régulière et $k'$ le corps résiduel de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $k'$ est une extension de degré de transcendance fini de $k$.
+    \item[(ii)] $\rang_K(\Der_k(A, A) \oplus_A K) = \dim (A) + \degtr_k(k')$ où $K$ désigne le corps des fractions de $A$. Alors $A$ satisfait à la condition $(J_k)$ du théorème 28 et, en particulier, $A$ est excellent (\emph{Matsumura}).
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire 29-3. --- \it Soient $k$ un corps de caractéristique 0 et $A$ une $k$-algèbre noethérienne régulière intégrale. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] Pour tout idéal maximal $m$ de $A$, le corps $A/m$ est une extension algébrique de $k$ et, de plus, $\dim(A_m) = \dim(A)$.
+    \item[(ii)] Il existe $n (= \dim A)$ $k$-dérivations $D_1, \dots, D_s$ de $A$ dans lui-même et des éléments $x_1, \dots, x_n$ de $A$, tels que $D_j x_i = \delta^i_j$ (symbole de \emph{Kronecker}). Alors l'anneau $A$ satisfait à la condition $(J_k)$ du théorème 28 et, en particulier, l'anneau $A$ est excellent.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire 29-4. --- \it Moyennant les hypothèses et notations du corollaire 29-3 tout séparé complété $\hat{A}$ de $A$ pour une topologie linéaire satisfait à la condition $(J_k)$ du théorème 28 et en particulier $\hat{A}$ est un anneau excellent.
+}
+\vskip .3cm
+{
+Corollaire (Matsumura-Nomura) 29-5. --- \it Le séparé complété $\hat{A}$ d'une algèbre $A$ de type fini sur un corps de caractéristique 0 est un anneau excellent.
+}
+\vskip .3cm
+{
+Théorème 30. --- \it Soient $k$ un corps de caractéristique $p \neq 0$, $A$ une $k$-algèbre locale noethérienne et $K$ le corps résiduel de $A$.
 
-%%%%%%%%%
+On suppose que~:
+\begin{itemize}
+    \item[(i)] $A$ une $k$-algèbre formellement lisse pour la topologie préadique.
+    \item[(ii)] $[K : K^p] < +\infty$. Alors les conditions suivantes sont équivalentes~:
+    \begin{itemize}
+        \item[a)] $A$ est excellent.
+        \item[b)] $\Omega^1_{A/k}$ est un $A$-module de type fini.
+    \end{itemize}
+    Si ces conditions sont satisfaites, l'anneau $A$ satisfait à la condition $(J_k)$ du théorème 28.
+\end{itemize}
+}
+\vskip .3cm
+{
+Théorème (Nagata-Grothendieck) 31. --- \it Soient $k$ un corps, $p$ son exposant caractéristique, $A$ un anneau local noethérien complet de corps résiduel $K$. On suppose que~:
+\begin{itemize}
+    \item[$1^\circ)$] $[k : k^p] < +\infty$.
+    \item[$2^\circ)$] $K$ est une extension finie d'une extension séparable $K_0$ de $K$.
+    \item[$3^\circ)$] $A$ est muni d'une structure de $K_0$-algèbre formellement lisse (pour la topologie préadique).
+\end{itemize}
+Soient $\mathcal{O}$ un idéal de $A$, $B = A/\mathcal{O}$, $p$ un idéal premier de $A$ contenant $\mathcal{O}$. Les conditions suivantes sont équivalentes~:
+\begin{itemize}
+    \item[a)] $Bp$ est une $k$-algèbre formellement lisse (pour la topologie $p$-préadique).
+    \item[b)] Il existe des $k$-dérivations $Di$ de $A$ dans lui-même $(1 \leq i \leq m)$ et des éléments $fi$ $(1 \leq i \leq m)$ de $\mathcal{O}$, tels que les images des $fi$ dans $\mathcal{O}Ap$ engendrent cet idéal de $Ap$, et que l'on ait $\det(Difj) \not\in p$.
+    \item[b')] Il existe une sous-extension $k'$ de $K_0$ contenant $k(K_0^p)$, telle que $[K_0 : k'] < +\infty$, des $k'$-dérivations $Di$ de $A$ dans lui-même $(1 \leq i \leq m)$ et des éléments $fi$ $(1 \leq i \leq m)$ de $\mathcal{O}$, tels que les images des $fi$ dans $\mathcal{O}Ap$ engendrent cet idéal de $Ap$, et que l'on ait $\det(Di fj) \not\in p$.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire 31-1. --- \it Moyennant les hypothèses et notations du théorème 31, l'anneau $A$ satisfait à la condition $(J_{K_0})$ du théorème 28.
+}
+\vskip .3cm
+{
+Corollaire 31-2. --- \it Soient $k$ un corps et $A$ une $k$-algèbre locale noethérienne. On suppose que~:
+\begin{itemize}
+    \item[$1^\circ)$] $[k : k^p] < +\infty$ ($p$ exposant caractéristique de $k$).
+    \item[$2^\circ)$] Les fibres formelles de $A$ sont géométriquement régulières.
+    \item[$3^\circ)$] Le corps résiduel de $A$ est extension finie d'une extension séparable de $k$.
+\end{itemize}
+Alors l'ensemble des idéaux premiers $p$ de $A$, tels que l'anneau local $Ap$ soit une $k$-algèbre formellement lisse (pour la topologie $p$-préadique) est ouvert dans $\Spec(A)$.
+}
+\vskip .3cm
+{
+Corollaire 31-3. --- \it Soient $k$ un corps, $p$ son exposant caractéristique, $A$ un anneau local noethérien de corps résiduel $K$. On suppose~:
+\begin{itemize}
+    \item[$1^\circ)$] $[k : k^p] < +\infty$.
+    \item[$2^\circ)$] $K$ est une extension finie d'une extension séparable $K_0$ de $k$.
+    \item[$3^\circ)$] $A$ est muni d'une structure de $K_0$-algèbre formellement lisse (pour la topologie préadique).
+    \item[$4^\circ)$] Les fibres formelles de $A$ sont géométriquement réduites.
+    \item[$5^\circ)$] Pour toute sous extension $k'$ de $K_0$ contenant $k(K_0^p)$, telle que $[K_0 : k'] < +\infty$, on a la relation $\rang (\Der_{k'} (A, A) \otimes_{A} L) = \dim(A) + \rang_{K_0} (\Omega^1_{K_0/k'}) \otimes L$ où $L$ désigne le corps des fractions de $A$.
+\end{itemize}
+Soient $\mathcal{O}$ un idéal de $A$, $B = A/\mathcal{O}$, $p$ un idéal premier de $A$ contenant $\mathcal{O}$. Les conditions suivantes sont équivalentes :
+\begin{itemize}
+    \item[a)] $Bp$ est une $k$-algèbre formellement lisse (pour la topologie $p$-préadique).
+    \item[b)] Il existe des $k$-dérivations $Di$ de $A$ dans lui-même $(1 \leq i \leq m)$ et des éléments $fi$ $(1 \leq i \leq m)$ de $\mathcal{O}$, tels que les images des $fi$ dans $\mathcal{O}Ap$ engendrent cet idéal de $Ap$, et que l'on ait $\det(Difj) \not\in p$.
+    \item[b')] Il existe une sous-extension $k'$ de $K_0$ contenant $k(K_0^p)$, telle que $[K_0 : k'] < +\infty$, des $k'$-dérivations $Di$ de $A$ dans lui-même $(1 \leq i \leq m)$ et des éléments $fi$ $(1 \leq i \leq m)$ de $\mathcal{O}$ tels que les images des $fi$ dans $\mathcal{O}Ap$ engendrent cet idéal de $Ap$, et que l'on ait $\det(Difj) \not\in p$.
+\end{itemize}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{V. Anneaux de Weierstrass}\label{sec:5}%
