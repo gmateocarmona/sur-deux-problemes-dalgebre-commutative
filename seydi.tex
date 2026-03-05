@@ -1,0 +1,896 @@
+%Begin
+
+
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{INTRODUCTION}\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{Introduction}
+\label{sec:intro}
+\section*{}
+
+Nous présentons ici les résultats que nous avons obtenus depuis 1968 sur les anneaux japonais, universellement japonais, excellents et les anneaux de \emph{Weierstrass}, et sur le problème des chaînes d'idéaux premiers dans les anneaux noethériens.
+
+Nous avons classé ces résultats en deux parties : La première partie que nous avons intitulée \emph{``Sur la théorie des anneaux japonais et les questions qui s'y rattachent''} contient les résultats sur les anneaux japonais, universellement japonais et excellents, et les anneaux de \emph{Weierstrass}.
+
+La deuxième partie contient les résultats sur les problèmes des chaînes d'idéaux premiers dans les anneaux noethériens.
+
+Tous ces résultats sont donnés sans démonstrations, pour la seule raison que celles-ci ont été publiées dans nos articles parus, ou en cours de parution.
+
+La plupart de ces résultats sont des généralisations de résultats dus aux grands maîtres de ces vingt-cinq dernières années, principalement \emph{Chevalley}, \emph{Grothendieck}, \emph{Mori}, \emph{Nagata}, \emph{Samuel} et \emph{Zariski}, ou des réponses à certaines questions qu'ils ont laissées en suspens.
+
+Nous tenons ici à remercier les Professeurs Alexander \emph{Grothendieck} et Pierre \emph{Samuel} qui ont dirigé nos travaux, le Professeur Henri \emph{Cartan} qui nous a fait l'honneur de présider ce jury et qui nous a proposé le second sujet de Thèse et les Professeurs Adrien \emph{Douady} et Jean-Luc \emph{Verdier} pour avoir accepté de faire partie du Jury.  
+
+Nos remerciements vont également à toutes les secrétaires de la Faculté des Sciences de \emph{Dakar} qui ont assuré la dactylographie du manuscrit.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{A --- SUR LA THÉORIE DES ANNEAUX JAPONAIS ET LES QUESTIONS QUI S'Y RATTACHENT}\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{Sur la théorie des anneaux japonais et les questions qui s'y rattachent}
+\label{sec:a}
+\section*{}
+
+Cette première partie a trait au problème de la classification des anneaux locaux noethériens à partir des propriétés de leurs fibres formelles. Toutes ces propriétés ont été mises en évidence par le travail de géomètres japonais sur la finitude de la fermeture intégrale, principalement \emph{Mori} et \emph{Nagata}, et dégagées par \emph{Grothendieck}. Ces propriétés étaient en germes également dans les travaux de \emph{Chevalley} et \emph{Zariski} sur les complétés des anneaux locaux de la géométrie algébrique et dans les travaux de \emph{Samuel} sur des ``anneaux à noyau''. Cependant les résultats les plus décisifs dans cette théorie sont ceux de \emph{Nagata} sur les anneaux japonais, universellement japonais, les anneaux de \emph{Weierstrass} et les critères jacobiens, et de \emph{Grothendieck} sur les anneaux excellents.
+
+Nos principales interventions dans cette théorie consistent essentiellement en des généralisations de certains résultats de ces auteurs et en l’établissement de certaines conjectures mises en évidence par les travaux.
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{I. Finitude de la fermeture intégrale}\label{sec:1}%
+\addcontentsline{toc}{section}{I. Finitude de la fermeture intégrale}
+
+{
+Théorème 1. --- \it Soit $A$ un anneau semi-local noethérien. Alors, les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[i)] Pour tout anneau quotient intègre $B$ de $A$, la clôture intégrale $\overline{B}$ de $B$ est un $B$-module de type fini.
+    \item[ii)] Pour tout anneau quotient intègre $B$ de $A$, le séparé complété $\widehat{B}$ de $B$ est réduit.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Théorème 2. --- \it Soit $A$ un anneau semi-local noethérien intègre. On suppose que la clôture intégrale $\overline{A}$ de $A$ est un $A$-module de type fini et que, pour tout idéal premier $\mathfrak{p}$ de $A$, tel que $A_{\mathfrak{p}}$ soit un anneau de valuation discrète, le séparé complété de l'anneau quotient $A/\mathfrak{p}$ est réduit. Alors, le séparé complété $\hat{A}$ de $A$ est réduit.
+}
+\vskip .3cm
+{
+Théorème 3. --- \it Soient $A$ un anneau semi-local noethérien réduit et $\overline{A}$ la clôture intégrale de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[i)] Les fibres formelles de $A$ aux points génériques des composantes irréductibles de $\Spec(A)$ sont normales (ce qui implique que le séparé complété $\hat{A}$ de $A$ est réduit, donc $\overline{A}$ est un $A$-module de type fini et, a fortiori, un anneau semi-local noethérien).
+    \item[ii)] Pour tout idéal premier $\mathfrak{p}$ de $\overline{A}$ de hauteur 1, le séparé complété de l'anneau quotient $\overline{A}/\mathfrak{p}$ est réduit.
+\end{itemize}
+Alors, le séparé complété $B$ de l'anneau $\overline{A}$ est normal et $B$ est la clôture intégrale du séparé complété $\hat{A}$ de $A$.
+}
+\vskip .3cm
+Remarque. --- Le théorème 3 a été d'abord prouvé par \emph{Zariski} (cf. 13) en supposant que $A$ est un localisé d'une algèbre de type fini sur corps~; \emph{Nagata} l'a étendu aux localisés des algèbres de type fini sur un anneau de \emph{Dedekind} qui est un anneau japonais ([9] 37.5, p. 138). En fait, \emph{Zariski} et \emph{Nagata} montrent respectivement qu'un anneau semi-local noethérien $A$ qui est un anneau de fractions d'une algèbre de type fini sur un corps (resp. un anneau de \emph{Dedekind} qui est un anneau japonais) satisfait aux conditions i) et ii) du théorème 3 et \emph{Grothendieck} ([4] 7.6.1) a montré qu'un anneau semi-local noethérien réduit dont les fibres formelles sont géométriquement normales, satisfait à la conclusion du théorème 3, hypothèse qui est plus forte que la conjonction de nos hypothèses i) et ii).
+
+Le raisonnement qui nous sert à prouver ce théorème permet de simplifier la démonstration de Zariski du théorème suivant~:
+\vskip .3cm
+{
+Théorème 4 (Zariski). --- \it Soient $A$ un anneau semi-local noethérien intègre dont le séparé complété $\widehat{A}$ est normal et $B$ une $A$-algèbre finie intègre contenant $A$ et dont le corps des fractions est une extension séparable de celui de $A$. On suppose que, pour tout idéal premier $p$ de hauteur 1 de $B$, le séparé complété $\widehat{B}$ de $B$ est normal.
+}
+Le même raisonnement permet de simplifier et de généraliser sous la forme suivante, le théorème de ``pureté'' de \emph{Zariski-Nagata}.
+\vskip .3cm
+{
+Théorème 5. --- \it Soient $S$ un schéma localement noethérien, $\psi: X \to S$ un morphisme fini et $x$ un point de $X$. On suppose vérifiées les conditions suivantes :
+\begin{enumerate}
+    \item[i)] $\mathcal{O}_{S, \psi(x)}$ est un anneau local régulier.
+    \item[ii)] $x$ est un point unibranche de $X$ où $X$ vérifie ($S_1$).
+    \item[iii)] $\dim(\mathcal{O}_{X, x}) = \dim(\mathcal{O}_{S, \psi(x)})$ (condition qui est satisfaite lorsque $X$ et $S$ sont intègres et $\psi$ dominante).
+    \item[iv)] $\psi$ est non ramifié en toute généralisation $x'$ de $x$ dans $X$ telle que $\dim(\mathcal{O}_{X, x'}) \leq 1$.
+\end{enumerate}
+Alors $\psi$ est étale au point $x$, donc aussi dans un voisinage de $x$ dans $X$.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau local régulier henselien et $B$ une $A$-algèbre intègre finie contenant $A$. On suppose que le morphisme canonique $\psi: \text{Spec}(B) \to \text{Spec}(A)$ est non ramifié en tout point $x$ de $\text{Spec}(B)$ de codimension $ \leq 1$ dans $\text{Spec}(B)$. Alors, $B$ est une $A$-algèbre étale.
+}
+\vskip .3cm
+{
+Théorème 6. --- \it Soient $A$ un anneau noethérien et $x$ un élément appartenant au radical de \emph{Jacobson} de $A$. On suppose vérifiées l'une des conditions suivantes~:
+\begin{enumerate}
+    \item[i)] Pour tout idéal maximal $m$ de $A$, l'anneau local $B = A_m$ est intègre et sa clôture intégrale $\overline{B}$ est un $B$-module de type fini et, pour tout idéal premier minimal $p'$ de $x\overline{B}$, $p' \bigcap A$ est un idéal premier de hauteur 1 (lorsque $A$ est un universellement caténaire, cette dernière condition est équivalente à $ht(x \overline{B}) = 1$ et, puisque $B$ est intègre, cela signifie que l'image de $x$ dans $\overline{B}$ est différente de 0).
+    \item[ii)] Pour tout idéal maximal $m$ de $A$, l'anneau local $B = A_m$ est intègre et $B^{(1)}$ (notation de [4], 5.10.17]) est un $B$-module de type fini.
+    \item[iii)] $A$ est caténaire et vérifié ($S_1$) et, pour tout idéal maximal $m$ de $A$, l'anneau local $B = A_m$ est équidimensionnel et, pour tout idéal premier minimal $q$ de $B = A_m$, posant $B_0 = B/q$, l'anneau $B_0^{(1)}$ est un $B_0$-module de type fini.
+\end{enumerate}
+On suppose, plus, vérifiées les deux conditions suivantes~:
+\begin{itemize}
+    \item[a)] $xA$ n'a qu'un seul idéal premier minimal $p$, $xAp = pAp$ et $\dim(Ap) = 1$.
+    \item[b)] $A/p$ est intégralement clos.
+\end{itemize}
+Alors $A$ est intègre et intégralement clos, $p = xA$ et $\dim(A/xA) = \dim(A) - 1$.
+}
+\vskip .3cm
+La démonstration du théorème 6 s'appuie sur le lemme suivant dû à l'auteur et à F. \emph{Ferrand}.
+\vskip .3cm
+{
+Lemme. --- \it Soient $A$ un anneau noethérien et $x$ un élément de $A$ tel que $p = xA$ soit un idéal premier non minimal. Alors les conditions suivantes sont équivalentes :
+\begin{itemize}
+    \item[i)] $A$ est intègre.
+    \item[ii)] $A$ est séparé pour la topologie $p$-adique.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire. --- Soit \it $A$ un anneau noethérien. S'il existe un idéal premier de $A$ non minimal qui est monogène et contenu dans le radical de \emph{Jacobson} de $A$, alors $A$ est intègre.
+}
+\vskip .3cm
+Remarque~: Le théorème 6 avec des hypothèses plus fortes est contenu dans la littérature sous le nom de ``lemme de \emph{Hironaka}''. En fait Hironaka l'a prouvé pour une $A$-algèbre intégrale essentiellement de type fini sur un corps, dans son article : ``A note on algebraic geometry over ground rings --- the invariance of Hilbert characteristic function under the specialization process'', Illinois Journal of Math. 2(1958) p. 355-356, \emph{Nagata} l'a établi sous l'hypothèse (i) en supposant de plus, $A$ intègre (cf. [10] 36.9 p. 134) et \emph{Grothendieck} ([4] 5.12.8) sous l'hypothèse (iii) en supposant de plus, $A$ local et réduit.
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien et $x$ un élément de $A$, tel que $p = xA$ soit un idéal premier non minimal de $A$ contenu dans le radical de \emph{Jacobson} de $A$ et que $A/p$ soit intégralement clos. Alors, $A$ est intègre et intégralement clos.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien caténaire et $x_1,\cdots,x_n$ des éléments appartenant au radical de \emph{Jacobson} de $A$. On suppose que $\mathrm{ht} \left( \sum_{1 \leq i \leq n} x_i A \right) = n$ et que $a = \sum_{1 \leq i \leq n} x_i A$ n'a qu'un seul idéal premier minimal $p$, $pAp = aAp$ et $\mathrm{ht}(p) = n$
+
+On suppose, de plus, satisfaites les conditions suivantes~:
+\begin{itemize}
+    \item[i)] $A$ satisfait à l'une des conditions (i),(ii), et (iii) du théorème 6 et tout anneau quotient intègre $B = A/q$ avec $q \subset p$ satisfait à l'une des conditions (i),(ii) et (iii) du théorème 6
+    \item[ii)] $A/p$ est intégralement clos.
+\end{itemize}
+Alors $A$ est intègre et intégralement clos et $p = \sum_{1 \leq i \leq n} x_i A$.
+
+En outre, pour tout entier $i \, , (1 \leq i \leq n)$, l'anneau quotient $A_i = A/ \sum_{1 \leq i \leq n} aj A$ est intègre et intégralement clos et $\dim(Ai) = \dim(A) - i$.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien et $x_1,\cdots,x_n$ des éléments appartenant au radical de \emph{Jacobson} de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[i)] Pour tout point fermé $s$ de $S = \Spec(A)$ l'anneau local $\mathcal{O}_{S,s}$ est équidimensionnel.
+    \item[ii)] $\mathrm{ht} \left( \sum_{1 \leq i \leq n} ai A \right) = a $, $a = \sum_{1 \leq i \leq n} ai A$ si $a$ n'a qu'un seul idéal premier minimal $p$, $pAp = aAp$ et $A/p$ est intégralement clos.
+    \item[iii)] $A$ vérifie $(S_1)$.
+\end{itemize}
+On suppose de plus que l'une des conditions suivantes est satisfaite~:
+\begin{itemize}
+    \item[a)] $A$ est quotient d'un anneau de \emph{Cohen-Macualey}
+    \item[b)] $A$ est universellement caténaire et, pour tout anneau quotient intègre, $B = A/q$ de $A$, avec $q \subset p$ et tout idéal maximal $m$ de $B$, la clôture intégrale de l'anneau local $B_m$ est un $B_m$-module de type fini.
+\end{itemize}
+Alors $A$ est intègre et intégralement clos et $p = \sum_{1 \leq i \leq n} xi A$.
+}
+\vskip .3cm
+En outre, pour tout entier $i \, (1 \leq i \leq n)$, l'anneau quotient $A_i = A/ \sum_{1 \leq j \leq n} xjA$ est intègre et intégralement clos et $\dim(A_i) = \dim(A) - i$.
+\vskip .3cm
+{
+Théorème 7. --- \it Soient $A$ un anneau noethérien intègre et $x$ un élément de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A$ est séparé et complet pour la topologie $xA$-adique
+    \item[(ii)] $xA$ n'a qu'un seul idéal premier minimal $p$ et, si $\overline{A}$ désigne la clôture intégrale de $A$, pour tout idéal premier minimal $p'$ de $x\overline{A}$, on a $p' \bigcap A = p$.
+    \item[(iii)] La clôture intégrale de l'anneau quotient $A/p$ est un $A/p$-module de type fini.
+\end{itemize}
+Alors la clôture intégrale $\overline{A}$ de $A$ est un $A$-module de type fini.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien et $x$ un élément de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A$ est séparé et complet pour la topologie $xA$-adique.
+    \item[(ii)] $xA$ n'a qu'un seul idéal premier minimal $p$.
+    \item[(iii)] $A/p$ est intégralement clos et, pour tout idéal premier $p'$ de hauteur $1$ de la clôture intégrale de $A$ contenant $x$ on a $p' \bigcap A = p$.
+\end{itemize}
+Alors $A$ est intégralement clos et $p = xA$.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{II. Anneaux japonais}\label{sec:2}%
+\addcontentsline{toc}{section}{II. Anneaux japonais}
+
+{
+Définition. --- \it On dit qu'un anneau $A$ est un anneau japonais si $A$ est intègre et si, pour toute extension finie $K'$ du corps des fractions $K$ de $A$, la fermeture intégrale $A'$ de $A$ dans $K'$ est un $A$-module de type fini.
+}
+\vskip .3cm
+{
+Théorème 8. --- \it Soient $A$ un anneau noethérien intègre et $x$ un élément de $A$. On suppose vérifiées les deux conditions suivantes~:
+\begin{itemize}
+    \item[i)] $p = xA$ est un idéal premier et $A$ est séparé et complet pour la topologie $p$-adique.
+    \item[ii)] $A/p$ est un anneau japonais.
+\end{itemize}
+Alors, $A$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soit $A$ un anneau japonais noethérien. Alors tout anneau de séries formelles $B = A \left[ \left[ T_1, \ldots, T_r \right] \right]$ à un nombre fini de variables sur $A$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau local noethérien intègre et complet. Alors tout anneau de séries restreintes (pour la topologie définie par l'idéal maximal de $A$) $B = A \left\{ T_1, \ldots, T_r \right\}$ à un nombre fini de variables sur $A$ est un anneau japonais.
+}
+\vskip .3cm
+Remarque~: Le théorème 8 a été prouvé par \emph{Tate} avec l'hypothèse supplémentaire~: $A$ est intégralement clos.
+\vskip .3cm
+{
+Théorème 9. --- \it Soient $A$ un anneau japonais noethérien et $B$ une algèbre intègre de type fini contenant $A$, telle que le morphisme canonique $\psi: \Spec(B) \to \Spec(A)$ soit universellement ouvert en tout point fermé de $\Spec(B)$. Alors $B$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau japonais noethérien et $B$ une $A$-algèbre intègre de type fini contenant $A$, telle que le morphisme canonique $\psi: \Spec(B) \to \Spec(A)$ soit plat. Alors $B$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Théorème 10. --- \it Soient $A$ un anneau noethérien intègre, $K$ son corps des fractions, $K'$ une extension finie de $K$ et $A'$ la fermeture intégrale de $A$ dans $K'$.
+\begin{itemize}
+    \item[(i)] On suppose qu'il existe un anneau noethérien d'anneau total des fractions $R$ qui vérifie les trois conditions suivantes~:
+    \begin{itemize}
+        \item[a)] $B$ est une $A$-algèbre fidèlement plate
+        \item[b)] $R \otimes_A K'$ est un anneau réduit
+        \item[c)] Pour tout idéal premier minimal $p$ de $B$, l'anneau quotient $B/p$ est un anneau japonais
+    \end{itemize}
+    Alors $A'$ est un $A$-module de type fini.
+    \item[(ii)] En particulier, s'il existe un anneau noethérien $B$ qui vérifie les conditions a) et c) de i) et dont l'anneau total des fractions $R$ est une $K$-algèbre séparable, alors $A$ est un anneau japonais.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau local régulier intègre et $A'$ son hensélisé (resp. son hensélisé strict). Si $A$ est un anneau japonais unibranche (resp. géométriquement unibranche), il en est de même de $A'$.
+
+Réciproquement, si $A$ est noethérien et si $A'$ est un anneau japonais, alors $A$ est un anneau japonais unibranche (resp. géométriquement unibranche).
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien intègre, $K$ son corps des fractions et $x$ un élément de $A$ appartenant au radical de \emph{Jacobson} de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A/xA$ est un anneau japonais
+    \item[(ii)] L'anneau total des fractions du séparé complet de $A$ pour la topologie $xA$-adique est une $K$-algèbre séparable.
+\end{itemize}
+Alors, $A$ est un anneau japonais.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau noethérien intègre dont le corps des fractions est de caractéristique 0 et $x$ un élément de $A$ appartenant au radical de \emph{Jacobson} de $A$. Si $A/xA$ est un anneau japonais, alors $A$ est un anneau japonais.
+}
+\vskip .3cm
+Remarque~: Le théorème 10 a été prouvé par \emph{Mori} sous les hypothèses~: $A$ est semi-local, $B$ est le séparé complété de $A$ et $K' = K$ et par GROTHENDIECK ([3] 23.1.7]) sous les hypothèses~: $A$ est semi-local et $B$ est le séparé complété de $A$.
+
+On peut se poser la question de savoir si, étant donné un anneau semi-local noethérien japonais, l'anneau total des fractions $R$ du séparé complété $\hat{A}$ de $A$ est une $K$-algèbre séparable ($K$ étant le corps des fractions de $A$). Il n'en est rien. On a le théorème suivant~:
+\vskip .3cm
+{
+Théorème 11. --- \it Il existe un anneau local noethérien normal japonais de dimension 3 qui est un anneau de \emph{Gorenstein} de multiplicité 2 et dont le séparé complété n'est pas réduit.
+}
+\vskip .3cm
+{
+Théorème 12. --- \it Soient $A$ un anneau noethérien intègre et $K$ le corps des fractions de $A$. Les conditions suivantes sont équivalentes~:
+\begin{itemize}
+    \item[(i)] $A$ est un anneau japonais et, pour tout idéal maximal $m$ de $A$, l'anneau total des fractions du séparé complété de l'anneau local $A_m$ est une $K$-algèbre séparable,
+    \item[(ii)] Pour toute $A$-algèbre intègre de type fini $B$ contenant $A$, la clôture intégrale de $B$ est un $B$-module de type fini.
+    \item[(iii)] Pour toute $A$-algèbre intègre de type fini $B$ contenant $A$ et dont le corps des fractions est une extension finie de celui de $A$, la clôture intégrale de $B$ est un $B$-module de type fini.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soit $A$ un anneau noethérien intègre qui satisfait aux conditions équivalentes du théorème 12, alors toute $A$-algèbre intégrale de type fini contenant $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Théorème 13. --- \it Soit $A$ un anneau noethérien intègre, qui satisfait aux conditions équivalentes du théorème 12, alors tout anneau de séries formelles $B = A \left[\left[ T_1, \ldots, T_r \right]\right]$ à un nombre fini de variables sur $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Théorème 14. --- \it Soient $A$ un anneau noethérien intègre et $x$ un élément de $A$. On suppose que $A/xA$ est intègre et satisfait aux conditions équivalentes du théorème 12.
+
+On suppose de plus, vérifiée l'une des conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A$ est séparé et complet pour la topologie $xA$-adique
+    \item[(ii)] $A$ est un anneau japonais et $x$ appartient au radical de \emph{Jacobson} de $A$.
+\end{itemize}
+Alors $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $A$ un anneau local noethérien intègre et complet, alors, tout anneau de séries restreintes $B = A \{ T_1, \ldots, T_r \}$ à un nombre fini de variables sur $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Théorème 15. --- \it Soient $A$ un anneau japonais régulier, $K$ son corps des fractions et $p$ l'exposant caractéristique de $K$. Si $\left[K : K^p\right] < +\infty$, $A$ satisfait aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Théorème 16. --- \it Soient $A$ un anneau local noethérien intègre unibranche (resp. géométriquement unibranche) et $A'$ son hensélisé (resp. son hensélisé strict). Alors, pour que $A$ satisfasse aux conditions équivalentes du théorème 12, il faut et il suffit que $A'$ satisfasse aux conditions équivalentes du théorème 12.
+}
+\vskip .3cm
+{
+Définition. --- \it On dit qu'un anneau $A$ est un anneau universellement japonais si toute $A$-algèbre intègre de type fini est un anneau japonais ou, ce qui revient au même, si la clôture intégrale de toute $A$-algèbre intégrale de type fini $B$ est un $B$-module de type fini.
+}
+On peut se demander si un anneau noethérien intègre qui satisfait aux conditions équivalentes du théorème 12 est universellement japonais. Il n'en est rien ; il existe un anneau local régulier de dimension 2 qui satisfait aux conditions équivalentes du théorème 12 et qui n'est pas un anneau universellement japonais (cf. [12]).
+
+En revanche, tout anneau noethérien intègre universellement japonais satisfait aux conditions équivalentes du théorème 12.
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{III. Anneaux excellents}\label{sec:3}%
+\addcontentsline{toc}{section}{III. Anneaux excellents}
+
+{
+Définition. --- \it On dit qu’un anneau $A$ est excellent s’il est noethérien et s’il vérifie les conditions suivantes~:
+\begin{itemize}
+    \item[i)] $A$ est universellement caténaire.
+    \item[ii)] Pour tout idéal premier $p$ de $A$, les fibres formelles de $Ap$ sont géométriquement régulières.
+    \item[iii)] Pour tout quotient intègre $B$ de $A$ et toute extension radicielle $K'$ du corps des fractions $K$ de $B$, il existe une sous-$B$-algèbre finie $B'$ de $K'$, contenant $B$, ayant $K'$ pour corps des fractions et telle que l’ensemble des points réguliers de $\Spec(B')$ contienne un ouvert non vide de $\Spec(B')$.
+\end{itemize}
+}
+\vskip .3cm
+{
+Théorème 17. --- \it Soient $A$ un anneau noethérien japonais contenant un corps de caractéristique $p \neq 0$, $K$ son corps des fractions. On suppose que $[K : K^p] < + \infty$. Alors $A$ vérifie les conditions (ii) et (iii) de la définition des anneaux excellents. En particulier, si $A$ est universellement caténaire, alors $A$ est excellent.
+}
+\vskip .3cm
+{
+Théorème 18. --- \it Soient un anneau noethérien contenant un corps de caractéristique $p \neq 0$, tel que $A^p \to A$ soit un homomorphisme fini. Alors $A$ satisfait les conditions (iii) et (iii) de la définition des anneaux excellents. 
+
+En particulier, si $A$ est universellement caténaire, alors $A$ est excellent.
+}
+\vskip .3cm
+{
+Théorème 19. --- \it Soient $A$ un anneau noethérien contenant un corps de caractéristique $p \neq 0$ et $K$ son corps résiduel. On suppose que $[K : K^p] < + \infty$. Les assertions suivantes sont équivalentes~:
+\begin{itemize}
+    \item[(i)] $A^p \to A$ est un homomorphisme fini.
+    \item[(ii)] Les fibres formelles de $A$ sont géométriquement régulières.
+    \item[(iii)] Les fibres formelles de $A$ sont géométriquement régulières, autrement dit, $A$ est un anneau japonais.
+    \item[(iv)] Les fibres formelles de $A$ aux points génériques des composantes irréductibles de $\Spec(A)$ sont géométriquement régulières.
+\end{itemize}
+}
+\vskip .3cm
+{
+Théorème 20. --- \it Soient $A$ un anneau local noethérien contenant un corps de caractéristique $p \neq 0$, $K$ son corps résiduel et $I$ un idéal de $A$ (différent de $A$). On suppose vérifiées les conditions suivantes :
+\begin{itemize}
+    \item[(i)] $[K : K^p] < +\infty$
+    \item[(ii)] $A$ est séparé et complet pour la topologie $I$-adique.
+\end{itemize}
+Alors, pour que les fibres formelles de $A/I$ soient géométriquement régulières, il faut et il suffit que les fibres formelles de $A$ soient géométriquement régulières.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{IV. Anneaux excellents et critères jacobiens}\label{sec:4}%
+\addcontentsline{toc}{section}{IV. Anneaux excellents et critères jacobiens}
+
+{
+Théorème 21. --- \it Soient $k$ un corps, $p$ son exposant caractéristique et $A$ une $k$-algèbre noethérienne. On suppose vérifiées les deux conditions suivantes~:
+\begin{enumerate}
+    \item[(i)] $\Omega^1_{A/k}$ est un $A$-module projectif.
+    \item[(ii)] Pour tout idéal maximal $m$ de $A$, l'anneau local est une $k$-algèbre formellement lisse pour les topologies préadiques (cette condition est une conséquence de la première lorsque $k$ est parfait).
+\end{enumerate}
+
+Soient $A' = A[T_1, \ldots, T_r]$ un anneau de polynômes à un nombre fini de variables sur $A$, $a$ un idéal de $A'$, $p$ un idéal premier de $A'$ contenant $a$ et $B = A/a$.
+
+\begin{enumerate}
+    \item[I)] Les deux conditions suivantes sont équivalentes~:
+    \begin{enumerate}
+        \item[a)] $Bp$ est une $k$-algèbre formellement lisse pour les topologies préadiques.
+        \item[b)] Il existe des $k$-dérivations $D_1, \ldots, D_s$ de $A'$ dans lui-même et des éléments $f_1, \ldots, f_s$ de $a$ dont les images dans $aAp$ engendrent cet idéal de $Ap$, tels que $\det(\text{Dif}~j) \notin p$.
+    \end{enumerate}
+    \item[II)] Les deux conditions suivantes sont équivalentes~:
+    \begin{enumerate}
+        \item[a')] $Bp$ un anneau local régulier.
+        \item[b')] Il existe un sous-corps $k'$ de $k$ contenant $k^p$, tel que $[k : k'] < +\infty$, des $k'$-dérivations $D_1, \ldots, D_s$ de $A'$ dans lui-même et des éléments $f_1, \ldots, f_s$ de $a$ dont les images dans $aAp$ engendrent cet idéal de $Ap$, tels que $\det(\text{Dif}~j) \notin p$.
+    \end{enumerate}
+\end{enumerate}
+}
+\vskip .3cm
+{
+Corollaire. --- \it Moyennant les notations et les hypothèses du théorème 21, l'anneau $A$ est excellent et l'ensemble des idéaux premiers $n$ de $B$, tels que l'anneau local $B_n$ soit une $k$-algèbre formellement lisse, est ouvert dans $\Spec(B)$.
+}
+\vskip .3cm
+Comme cas particulier du théorème 21, on a le
+\vskip .3cm
+{
+Théorème 22. --- \it Soient $k$ un corps parfait de caractéristique $p \neq 0$ et $A$ une $k$-algèbre noethérienne régulière telle que $A^p \to A$ soit un homomorphisme fini. Soient $A' = A[T_1, \ldots, T_r]$ un anneau de polynômes à un nombre fini de variables sur $A$, un idéal de $A'$, $p$ un idéal premier de $A'$ contenant $a$ et $B = A/a$. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[a)] $Bp$ est un anneau local régulier.
+    \item[b)] Il existe des $k$-dérivations $D_1, \ldots, D_s$ de $A'$ dans lui-même et des éléments $f_1, \ldots, f_s$ de $a$ dont les images dans $Ap$ engendrent cet idéal de $Ap$, tels que $\det(\text{Dif}~j) \notin p$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Corollaire. --- \it Moyennant les notations et les hypothèses du théorème 22, l'anneau $A$ est excellent.
+}
+\vskip .3cm
+{
+Théorème 23. --- \it Soient $k$ un corps parfait de caractéristique $p \neq 0$ et $A$ une $k$--algèbre locale régulière. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[(i)] $A$ est un anneau excellent.
+    \item[(ii)] $\Omega^1_{A/k}$ est un $A$-module de type fini.
+    \item[(iii)] $\rang_k(\Omega^1_{A/k} \oplus_k K) = \dim(A)$, où $K$ désigne le corps des fractions de $A$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Théorème 24. --- \it Soient $k$ un corps de caractéristique $p \neq 0$, tel que $[k : k^p] < +\infty$ et $A$ une $k$-algèbre locale formellement lisse (pour la topologie préadique) dont le corps résiduel $k_0$ est une extension de type fini de $K$. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[(i)] $A$ est un anneau excellent.
+    \item[(ii)] $\Omega^1_{A/k}$ est un $A$-module de type fini.
+    \item[(iii)] $\rang_k(\Omega^1_{A/k} \oplus_k K) = \dim(A) + \degtr_k(k_0) + \rang(\Omega^1_k)$ où $K$ désigne le corps des fractions de $A$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Théorème 25. --- \it Soient $k$ un corps parfait de caractéristique $p \neq 0$, $A$ une $k$-algèbre noethérienne telle que $A^p \to A$ soit un homomorphisme fini et $x$ un point de $X = \Spec(A)$. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[(i)] $\mathcal{O}_{X, x}$ est un anneau local régulier.
+    \item[(ii)] $(\Omega_{x/k})_x$ est un $\mathcal{O}_{X, x}$--module plat (ou, ce qui revient au même, libre).
+\end{enumerate}
+}
+\vskip .3cm
+{
+Théorème 26. --- \it Soient $A$ un anneau local noethérien contenant un corps, $B$ un anneau local noethérien et $\psi : A \to B$, un homomorphisme local. Alors les conditions suivantes sont équivalentes~:
+\begin{itemize}
+    \item[(i)] $\psi : \Spec(B) \to \Spec(A)$ est un morphisme régulier, i.e. un morphisme plat à fibres géométriquement régulières.
+    \item[(ii)] $\psi$ fait de $B$ une $A$-algèbre formellement lisse pour les topologies préadiques.
+\end{itemize}
+}
+\vskip .3cm
+{
+Théorème 27. --- \it Soient $A$ un anneau semi-local noethérien et $A'$ son henseélisé strict. Alors, pour que $A'$ soit un anneau excellent, il faut et il suffit que les fibres formelles de $A$ soient géométriquement régulières.
+}
+\vskip .3cm
+{
+Théorème 28. --- \it Soient $k$ un corps d'exposant caractéristique $p$ et $A$ une $k$-algèbre noethérienne. On considère les deux conditions suivantes~:
+\begin{itemize}
+    \item[$(J_k)$]~: Pour tout idéal premier $p$ de $A$, il existe un sous-corps $k'$ contenant $k^p$, tel que $[k : k'] < +\infty$, des $k'$-dérivations $D_1, \dots, D_s$ de $A$ dans lui-même et des éléments $f_1, \dots, f_s$ de $p$, dont les images dans $pAp$ engendrent cet idéal de $Ap$, tels que $\det(Djfi) \notin p$.
+    \item[$(J'_k)$]~: Pour tout idéal $a$ de $A$ et tout idéal premier $p$ de $A$ contenant $a$, tels que $Ap/aAp$ soit un anneau local régulier, il existe un sous-corps $k'$ de $k$ contenant $k^p$, tel que $k : k'$ des $k'$-dérivations $D_1, \dots, D_s$ de $A$ dans lui-même et des éléments $f_1, \dots, f_s$ de $a$ dont les images dans $aAp$ engendrent cet idéal de $Ap$, tels que $\det(Djfi) \notin p$.
+    \item[(i)] Les conditions $(J_k)$ et $(J_k')$ sont équivalentes.
+    \item[(ii)] Si $A$ vérifie $(J_k)$, alors $A$ est un anneau régulier et, pour tout idéal premier $p$ de $A$, les fibres formelles de l'anneau local $Ap$ sont régulières. 
+    
+    Si $A$ vérifie $(J_k)$, tout anneau de fractions $S^{-1}A$ vérifie aussi $(J_k)$.
+    \item[(iii)] Si $A$ vérifie $(J_k)$ et si $k$ est de caractéristique 0, alors $A$ est excellent et tout anneau de polynômes $A' = A[T_1, \dots, T_r]$ à un nombre fini de variables sur $A$ vérifie aussi $(J_k)$
+\end{itemize}
+}
+\vskip .3cm
+{
+Théorème 29. --- \it Soient $k$ un corps de caractéristique 0, $A$ une $k$-algèbre local régulière dont le corps résiduel est une extension algébrique de $k$ et $K$ le corps des fractions de $A$. Si $\rang_K(\Der_k(A, A) \oplus_A K) = \dim (A)$, alors $A$ satisfait à la condition $(J_k)$ du théorème 20.
+}
+\vskip .3cm
+{
+Corollaire 29-1. --- \it Soient $A$ un anneau local noethérien complet contenant un caractéristique 0. Alors tout anneau de séries restreintes $A' = A \{T_1, \dots, T_r\}$ à un nombre fini de variables sur $A$ (pour la topologie préadique de $A$) est un anneau excellent.
+}
+\vskip .3cm
+{
+Corollaire 29-2. --- \it Soient $k$ un corps de caractéristique 0, $A$ une $k$-algèbre local noethérienne régulière et $k'$ le corps résiduel de $A$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $k'$ est une extension de degré de transcendance fini de $k$.
+    \item[(ii)] $\rang_K(\Der_k(A, A) \oplus_A K) = \dim (A) + \degtr_k(k')$ où $K$ désigne le corps des fractions de $A$. Alors $A$ satisfait à la condition $(J_k)$ du théorème 28 et, en particulier, $A$ est excellent (\emph{Matsumura}).
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire 29-3. --- \it Soient $k$ un corps de caractéristique 0 et $A$ une $k$-algèbre noethérienne régulière intégrale. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] Pour tout idéal maximal $m$ de $A$, le corps $A/m$ est une extension algébrique de $k$ et, de plus, $\dim(A_m) = \dim(A)$.
+    \item[(ii)] Il existe $n (= \dim A)$ $k$-dérivations $D_1, \dots, D_s$ de $A$ dans lui-même et des éléments $x_1, \dots, x_n$ de $A$, tels que $D_j x_i = \delta^i_j$ (symbole de \emph{Kronecker}). Alors l'anneau $A$ satisfait à la condition $(J_k)$ du théorème 28 et, en particulier, l'anneau $A$ est excellent.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire 29-4. --- \it Moyennant les hypothèses et notations du corollaire 29-3 tout séparé complété $\hat{A}$ de $A$ pour une topologie linéaire satisfait à la condition $(J_k)$ du théorème 28 et en particulier $\hat{A}$ est un anneau excellent.
+}
+\vskip .3cm
+{
+Corollaire (Matsumura-Nomura) 29-5. --- \it Le séparé complété $\hat{A}$ d'une algèbre $A$ de type fini sur un corps de caractéristique 0 est un anneau excellent.
+}
+\vskip .3cm
+{
+Théorème 30. --- \it Soient $k$ un corps de caractéristique $p \neq 0$, $A$ une $k$-algèbre locale noethérienne et $K$ le corps résiduel de $A$.
+
+On suppose que~:
+\begin{itemize}
+    \item[(i)] $A$ une $k$-algèbre formellement lisse pour la topologie préadique.
+    \item[(ii)] $[K : K^p] < +\infty$. Alors les conditions suivantes sont équivalentes~:
+    \begin{itemize}
+        \item[a)] $A$ est excellent.
+        \item[b)] $\Omega^1_{A/k}$ est un $A$-module de type fini.
+    \end{itemize}
+    Si ces conditions sont satisfaites, l'anneau $A$ satisfait à la condition $(J_k)$ du théorème 28.
+\end{itemize}
+}
+\vskip .3cm
+{
+Théorème (Nagata-Grothendieck) 31. --- \it Soient $k$ un corps, $p$ son exposant caractéristique, $A$ un anneau local noethérien complet de corps résiduel $K$. On suppose que~:
+\begin{itemize}
+    \item[$1^\circ)$] $[k : k^p] < +\infty$.
+    \item[$2^\circ)$] $K$ est une extension finie d'une extension séparable $K_0$ de $K$.
+    \item[$3^\circ)$] $A$ est muni d'une structure de $K_0$-algèbre formellement lisse (pour la topologie préadique).
+\end{itemize}
+Soient $\mathcal{O}$ un idéal de $A$, $B = A/\mathcal{O}$, $p$ un idéal premier de $A$ contenant $\mathcal{O}$. Les conditions suivantes sont équivalentes~:
+\begin{itemize}
+    \item[a)] $Bp$ est une $k$-algèbre formellement lisse (pour la topologie $p$-préadique).
+    \item[b)] Il existe des $k$-dérivations $Di$ de $A$ dans lui-même $(1 \leq i \leq m)$ et des éléments $fi$ $(1 \leq i \leq m)$ de $\mathcal{O}$, tels que les images des $fi$ dans $\mathcal{O}Ap$ engendrent cet idéal de $Ap$, et que l'on ait $\det(Difj) \not\in p$.
+    \item[b')] Il existe une sous-extension $k'$ de $K_0$ contenant $k(K_0^p)$, telle que $[K_0 : k'] < +\infty$, des $k'$-dérivations $Di$ de $A$ dans lui-même $(1 \leq i \leq m)$ et des éléments $fi$ $(1 \leq i \leq m)$ de $\mathcal{O}$, tels que les images des $fi$ dans $\mathcal{O}Ap$ engendrent cet idéal de $Ap$, et que l'on ait $\det(Di fj) \not\in p$.
+\end{itemize}
+}
+\vskip .3cm
+{
+Corollaire 31-1. --- \it Moyennant les hypothèses et notations du théorème 31, l'anneau $A$ satisfait à la condition $(J_{K_0})$ du théorème 28.
+}
+\vskip .3cm
+{
+Corollaire 31-2. --- \it Soient $k$ un corps et $A$ une $k$-algèbre locale noethérienne. On suppose que~:
+\begin{itemize}
+    \item[$1^\circ)$] $[k : k^p] < +\infty$ ($p$ exposant caractéristique de $k$).
+    \item[$2^\circ)$] Les fibres formelles de $A$ sont géométriquement régulières.
+    \item[$3^\circ)$] Le corps résiduel de $A$ est extension finie d'une extension séparable de $k$.
+\end{itemize}
+Alors l'ensemble des idéaux premiers $p$ de $A$, tels que l'anneau local $Ap$ soit une $k$-algèbre formellement lisse (pour la topologie $p$-préadique) est ouvert dans $\Spec(A)$.
+}
+\vskip .3cm
+{
+Corollaire 31-3. --- \it Soient $k$ un corps, $p$ son exposant caractéristique, $A$ un anneau local noethérien de corps résiduel $K$. On suppose~:
+\begin{itemize}
+    \item[$1^\circ)$] $[k : k^p] < +\infty$.
+    \item[$2^\circ)$] $K$ est une extension finie d'une extension séparable $K_0$ de $k$.
+    \item[$3^\circ)$] $A$ est muni d'une structure de $K_0$-algèbre formellement lisse (pour la topologie préadique).
+    \item[$4^\circ)$] Les fibres formelles de $A$ sont géométriquement réduites.
+    \item[$5^\circ)$] Pour toute sous extension $k'$ de $K_0$ contenant $k(K_0^p)$, telle que $[K_0 : k'] < +\infty$, on a la relation $\rang (\Der_{k'} (A, A) \otimes_{A} L) = \dim(A) + \rang_{K_0} (\Omega^1_{K_0/k'}) \otimes L$ où $L$ désigne le corps des fractions de $A$.
+\end{itemize}
+Soient $\mathcal{O}$ un idéal de $A$, $B = A/\mathcal{O}$, $p$ un idéal premier de $A$ contenant $\mathcal{O}$. Les conditions suivantes sont équivalentes :
+\begin{itemize}
+    \item[a)] $Bp$ est une $k$-algèbre formellement lisse (pour la topologie $p$-préadique).
+    \item[b)] Il existe des $k$-dérivations $Di$ de $A$ dans lui-même $(1 \leq i \leq m)$ et des éléments $fi$ $(1 \leq i \leq m)$ de $\mathcal{O}$, tels que les images des $fi$ dans $\mathcal{O}Ap$ engendrent cet idéal de $Ap$, et que l'on ait $\det(Difj) \not\in p$.
+    \item[b')] Il existe une sous-extension $k'$ de $K_0$ contenant $k(K_0^p)$, telle que $[K_0 : k'] < +\infty$, des $k'$-dérivations $Di$ de $A$ dans lui-même $(1 \leq i \leq m)$ et des éléments $fi$ $(1 \leq i \leq m)$ de $\mathcal{O}$ tels que les images des $fi$ dans $\mathcal{O}Ap$ engendrent cet idéal de $Ap$, et que l'on ait $\det(Difj) \not\in p$.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{V. Anneaux de Weierstrass}\label{sec:5}%
+\addcontentsline{toc}{section}{V. Anneaux de Weierstrass}
+
+{
+Définition. --- \it On dit qu’un anneau $A$ est un anneau de \emph{Weierstrass} si $A$ vérifie les trois conditions suivantes~:
+\begin{itemize}
+    \item[(i)] $A$ est un anneau semi-local noethérien hensélien
+    \item[(ii)] $A$ est un anneau universellement japonais
+    \item[(iii)] Pour tout anneau quotient intègre $B$ de $A$, il existe un sous-anneau local régulier $B'$ de $B$, tel que $B$ soit un $B'$-module de type fini.
+\end{itemize}
+}
+\vskip .3cm
+Par exemple, tout anneau semi-local noethérien complet est un anneau de \emph{Weierstrass} excellent (\emph{Nagata}).
+\vskip .3cm
+{
+Théorème 32. --- \it Soient $A$ un anneau de \emph{Weierstrass} local, $k$ son corps résiduel et $p$ l’exposant caractéristique de $A$. Si $\left[ k : k^p \right] < +\infty$, alors $A$ est un anneau excellent.
+}
+\vskip .3cm
+Soit $K$ un corps valué. On dit que $K$ est quasicomplet si le complété $K'$ de $K$ est une extension séparable de $K$. Dans son article (6) L. \emph{Gerritzen} a montré que, pour que l’anneau des séries convergentes $K \left\{ \{ T \} \right\}$ à une variable sur un corps valué $K$ soit un anneau de \emph{Weierstrass}, il faut et il suffit que $K$ soit quasi-complet et, dans ce cas, tout anneau analytique sur $K$ est un anneau de \emph{Weierstrass}.
+
+On en conclut donc que, si $K$ est un corps valué quasi-complet d’exposant caractéristique $p$, tel que $$\left[ K : K^p \right] < +\infty$$ alors tout anneau analytique sur $K$ est un anneau de \emph{Weierstrass} excellent, donc, compte tenu du théorème 22, on a le~:
+\vskip .3cm
+{
+Théorème 33. --- \it Soient $K$ un corps valué quasi-complet d’exposant caractéristique $p$, tel que $\left[ K : K^p \right] < +\infty$, $A$ un anneau de séries convergentes sur $K$ et $$A' = A \left[ T_1, \ldots, T_r \right]$$ un anneau de polynômes à un nombre fini de variables sur $K$. Alors $A$ vérifie la condition $(J_k)$ du théorème 29.
+}
+\vskip .3cm
+{
+Théorème 34. --- \it Soient $K$ un corps valué parfait et $A$ et $A'$ deux anneaux analytiques sur $K$. On suppose que $A$ et $A'$ sont intègres et intégralement clos. Alors le produit tensoriel analytique de $A$ et $A'$ (cf. [10] 47 p. 199) est intègre et intégralement clos.
+}
+\vskip .3cm
+{
+Corollaire. --- \it Soient $X$ et $Y$ deux schémas affines de type fini sur un corps $k$. On suppose vérifiées les conditions suivantes~:
+\begin{itemize}
+    \item[(i)] Chacun des schémas $X$ et $Y$ possède un point rationnel sur $k$.
+    \item[(ii)] $X$ et $Y$ sont normaux.
+\end{itemize}
+Alors $X \times_k Y$ est un schéma intègre et normal.
+}
+\vskip .3cm
+{
+Définition. --- \it Soit $A = K \left[ \left[ T_1, \ldots, T_n \right] \right]$ l’anneau des séries formelles à $n$ variables sur un corps $K$. On appelle série formelle algébrique à $n$ variables sur $K$, toute série formelle $f \in A$ qui est algébrique sur l’anneau des polynômes $K \quad T_1, \ldots, T_n $.
+
+L’ensemble des séries formelles algébriques à $n$ variables sur $K$ est le hensélisé $K \quad T_1, \ldots, T_n $ de l'anneau local à l’origine de $X = \Spec \left( K \left[ T_1, \ldots, T_n \right] \right)$.
+}
+\vskip .3cm
+{
+Théorème 35. --- \it Soient $K$ un corps et $A = K \left[ T_1, \ldots, T_n \right]$ l’anneau des séries formelles algébriques sur $K$. Alors $A$ est un anneau de \emph{Weierstrass} local régulier et excellent de dimension $n$, dont le complété est l’anneau des séries formelles $K \left[ \left[ T_1, \ldots, T_n \right] \right]$.
+
+En outre, pour tout idéal $a$ (non nécessairement premier), il existe un sous-anneau $B$ contenant $K$ de l’anneau quotient $B' = A/a$ qui est $K$-isomorphe à l'anneau des séries formelles algébriques à $s = \left( \dim B' \right)$ variables sur $K$, tel que $B'$ soit un $B$-module de type fini.
+}
+\vskip .3cm
+{
+Théorème 36. --- \it Soient $K$ un corps, $A$ et $B$ deux $K$-algèbres locales noethériennes qui sont $K$-isomorphes à des algèbres finies sur des anneaux de séries formelles algébriques sur $K$ et $\psi : A \to B$ un $K$-homomorphisme local. Alors, les deux conditions suivantes sont équivalentes~:
+\begin{itemize}
+    \item[(i)] $\psi$ fait de $B$ un $A$-module quasi fini.
+    \item[(ii)] $\psi$ est un homomorphisme fini.
+\end{itemize} 
+}
+\vskip .3cm
+{
+Théorème 37. --- \it Soit $K$ un corps. Alors tout anneau de séries formelles algébriques sur $K$ vérifie la condition $(J_k)$ du théorème 28.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{ADDENDA}\thispagestyle{empty}
+\addcontentsline{toc}{section}{Addenda}
+\label{sec:add}
+\section*{}
+
+\begin{itemize}
+    \item[$1^\circ)$] Dans l’énoncé du théorème $2$, on peut remplacer la condition ``pour tout idéal premier'', par ``sauf pour un nombre fini d’idéaux premiers''.
+    \item[$2^\circ)$] Les deux résultats suivants sont à rattacher à ceux du chapitre IV.
+\end{itemize}
+\vskip .3cm
+{
+Théorème $1'$. --- \it Soient $k$ un corps, $p$ son exposant caractéristique, $$A = k[X_1, \ldots, X_r]$$ un anneau de polynômes à un nombre fini de variables sur $A$ et $$B = A[[T_1, \ldots, T_s]]$$ un anneau de séries formelles à un nombre fini de variables sur $A$. Si $$[k : k^p] < +\infty$$, alors tout anneau de polynômes à un nombre fini de variables sur $B$ satisfait à la condition $(J_k)$.
+}
+\vskip .3cm
+{
+Théorème $2'$. --- \it Soient $k$ un corps, $p$ son exposant caractéristique, $$A = k[[X_1, \ldots, X_r]]$$ un anneau de séries formelles à un nombre fini de variables sur $k$ et $$B = A\{  X_1, \ldots, X_s \}$$ un anneau de séries restreintes sur $A$ (pour la topologie précédente). Si $[k : k^p] < +\infty$ alors tout anneau de polynômes à un nombre fini de variables sur B satisfait à la condition $(J_1)$.
+}
+\vskip .3cm
+Remarque~: Le théorème $1'$, sous la condition~: ``$k$ est de caractéristique zéro'', est connu par \emph{H. Matsumura} qui l’a utilisé pour prouver que le séparé complet pour une topologie linéaire d’une algèbre de type fini sur un corps de caractéristique $0$ est un anneau excellent.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{NOTE}\thispagestyle{empty}
+\addcontentsline{toc}{section}{Note}
+\label{sec:n1}
+\section*{}
+
+\subsection*{Chapitre I}
+
+Les théorèmes de ce chapitre ont été annoncés au Colloque d’Algèbre tenu à \emph{Rennes} (France) du 19 au 22 janvier 1972. On trouvera des esquisses de démonstration dans notre article paru dans les Comptes Rendus du dit colloque. Pour ce qui est du théorème 6 (chap.I), nous en avions donné une démonstration dans notre article ``Un exemple d’anneau local noethérien japonais qui n’est pas formellement réduit'', C. Rend. Acad. Sci. Paris, t.274, p.1334--1337 (1972). Quant aux autres théorèmes du chapitre I, des démonstrations plus simples paraîtront très prochainement dans un note actuelle en préparation.
+
+\subsection*{Chapitre II}
+
+Le théorème 8 du chapitre II est démontré dans notre article : ``Sur la théorie des anneaux japonais'', C. Rend. Acad. Sci. Paris, t.271, p.73--75 (1970). Il généralise un résultat de \emph{Tate} (BGAC IV 23.1.3), ainsi que le théorème 13.
+
+Le théorème 9 a été annoncé au Colloque d’Algèbre de \emph{Rennes} (loc.cit.); il en a été donné une démonstration dans notre article paru dans les Comptes Rendus de ce colloque.
+
+Le théorème 10 a été démontré dans notre article : ``Sur la théorie des anneaux de \emph{Weierstrass}'', Bull. Sci. Math., t.95, 1971, p.223--225.
+
+Le théorème 11 a été démontré dans notre article : ``Un exemple d’anneau local noethérien japonais qui n’est pas formellement réduit'', C. Rend. Acad. Sci. Paris, t.274, p.1334--1337 (1972).
+
+Les théorèmes 12, 14, 15 ont été démontrés dans notre article : ``La réciproque d’un théorème de \emph{Kikuchi}'', J. of Math of Kyoto University, vol.11, n$^\circ$ 3 (1971), p.415--424. Leur démonstration s’appuie sur un résultat de \emph{Rees} (cf. son article : ``A note on analytically unramified local rings'' J. Math. Soc. (1961), p.24--28. Ils généralisent certains résultats de \emph{Kikuchi} (cf. son article ``On the finiteness of derived normal ringes of an affine ring'', J. Math. Soc. Japan, vol.15 n$^\circ$ 3, 1963, p.360--365) sur la finitude de la fermeture intégrale d’une algèbre affine.
+
+\subsection*{Chapitre III}
+
+Les théorèmes 17, 18 et 19 ont été démontrés dans deux articles : ``Sur la théorie des anneaux excellents en caractéristique $p$'' , Bull. Sci. Math., t.96, 1972, p.193--198 et ``Sur une note d’Ernst \emph{Kunz}, C.Rend.Acad.Sci.Paris, t.274, p.714--716 (1972). Ils généralisent des résultats de E. \emph{Kunz} (cf. son article : ``A characterisation of regular local ring of characteristic $p$'', Am. J. of Math 3 (1967) p.178--190).
+
+Le théorème 20 a été démontré dans notre article : ``Sur la théorie des anneaux excellents en caractéristique $p$'', Bull. Sci. Math., t.96, 1972, p.193--198.
+
+\subsection*{Chapitre IV}
+
+Les théorèmes 21, 22, 23, 24, 25, 25 et 27 ont été énoncés dans notre note ``Un critère jacobien des points simples'' (à paraître aux C.R., Acad.Sci.Paris) sans démonstrations. Ces démonstrations paraîtront dans nos articles en préparation : ``Sur la théorie des anneaux excellents en caractéristique $p$, III'' et ``Sur la théorie des anneaux excellents en caractéristique $0$, I'' et ``Sur les algèbres jacobiennes''.
+
+\subsection*{Chapitre V}
+
+La démonstration du théorème 32 a été donnée dans notre article ``Sur la théorie des anneaux de \emph{Weierstrass}, I'' Bull. Soc. Math., t.95, 1971, p.223--225.
+
+Quant aux autres théorèmes du chapitre, leurs démonstrations paraîtront dans nos articles : ``Sur la théorie des anneaux excellents en caractéristique zéro''.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\bibname}{BIBLIOGRAPHIE}
+\addcontentsline{toc}{chapter}{Bibliographie}
+\def\refname{B\MakeLowercase{IBLIOGRAPHIE}}
+\begin{thebibliography}{99}\thispagestyle{empty}
+
+\bibitem{bass63}
+  {\sc H. Bass} ---
+  {\it On the ubiquity of Gorenstein ring}. Math. Zeit. 82 (1963), p. 8-68
+
+\bibitem{grothendieckdieudonne}
+  {\sc A. Grothendieck et J. Dieudonné} ---
+  {\it Éléments de géométrie algébrique I}. Springer Verlag Berlin, Heidelberg, New-York
+
+\bibitem{grothendieckdieudonne64}
+  {\sc A. Grothendieck et J. Dieudonné} ---
+  {\it Éléments de géométrie algébrique, chap. $0_{IV}$}. Paris P.U.F., no 20 (1964)
+
+\bibitem{grothendieckdieudonne66}
+  {\sc A. Grothendieck et J. Dieudonné} ---
+  {\it Éléments de géométrie algébrique, chap. IV}. Paris P.U.F., no 24 (1966), no 28 (1966), et no 32 (1967)
+
+\bibitem{grothendieckseydi}
+  {\sc A. Grothendieck et H. Seydi} ---
+  {\it Morphismes universels ouverts} (à paraître)
+
+\bibitem{geritzen}
+  {\sc L. Gerritzen} ---
+  {\it Erweiterungsendlische Ringe in der nicht-archimedischen Funktiontheorie}. Inv. Math. 2 (1967), p. 178-190
+
+\bibitem{kunz}
+  {\sc E. Kunz} ---
+  {\it A characterization of regular local ring of characteristic $p$}. Am. J. of Math. 2 (1967), p. 178-190C
+
+\bibitem{matsumura}
+  {\sc H. Matsumura} ---
+  {\it Commutative algebra}. Benjamin New-York
+
+\bibitem{nagata59}
+  {\sc M. Nagata} ---
+  {\it On the closedness of singular loci}. Publ. Math. Inst. Hautes Et. Scientifiques 2 (1959), p. 29-36
+
+\bibitem{nagata62}
+  {\sc M. Nagata} ---
+  {\it Local rings}. Interscience Tracts in pure and applied mathematics, vol. 13 (1962) Interscience New-York
+
+\bibitem{seydi86}
+  {\sc H. Seydi} ---
+  {\it Anneaux henseliens et conditions de chaines I}. Bull. Soc. Math. France, vol. (19860), p. 9-31
+
+\bibitem{seydi71}
+  {\sc H. Seydi} ---
+  {\it La réciproque d’un théorème de Kikuchi}. J. of Math, Kyoto Univ., vol. II, no 3 (1971), p. 415-424
+
+\bibitem{zariski50}
+  {\sc O. Zariski} ---
+  {\it Sur la normalité analytique des variétés normales}. Ann. Inst. Fourier 2 (1950), p. 151-164
+
+\bibitem{zariskisamuel}
+  {\sc O. Zariski et P. Samuel} ---
+  {\it Commutative algebra, vol. 1 et 2}. Van Nostrand, Univ. Series in higher Mathematics
+
+\bibitem{seydi71b}
+  {\sc H. Seydi} ---
+  {\it Sur la théorie des anneaux de Weierstrass I}. Bull. Soc. Math., t. 95, 1971, p. 225-227
+
+\bibitem{seydi72}
+  {\sc H. Seydi} ---
+  {\it Sur la théorie des anneaux de Weierstrass II}, (à paraître)
+
+\bibitem{seydi72b}
+  {\sc H. Seydi} ---
+  {\it Sur une note d’Ernst Kunz}. C. Rend. Acad. Sci. Paris t. 274, p. 714-716 (1972)
+
+\bibitem{seydi73}
+  {\sc H. Seydi} ---
+  {\it Sur le critère jacobien de Nagata}, (à paraître)
+
+\bibitem{seydi73b}
+  {\sc H. Seydi} ---
+  {\it Un critère jacobien des points simples}. C.R. Acad. Sci. Paris, t. 276, p. 475-478 (1973)
+
+\bibitem{seydi72c}
+  {\sc H. Seydi} ---
+  {\it Sur la théorie des anneaux excellents en caractéristique p}. Bull. Sci. Math., t. 96, 1972, p. 195-198
+
+\bibitem{seydi72d}
+  {\sc H. Seydi} ---
+  {\it Sur la théorie des anneaux excellents en caractéristique p, II (à paraître)}
+
+\bibitem{seydi70}
+  {\sc H. Seydi} ---
+  {\it Sur la théorie des anneaux japonais}. C. Rend. Acad. Sci. Paris, t. 271, p. 73-75, (1970)
+
+\bibitem{seydi72e}
+  {\sc H. Seydi} ---
+  {\it Un exemple d’anneau local noethérien japonais qui n’est pas formellement réduit}. C. Rend. Acad. Sci. Paris, t. 274, p. 1334-1337 (1972)
+
+\bibitem{seydi71c}
+  {\sc H. Seydi} ---
+  {\it Sur les anneaux de séries formelles algébriques}. C. Rend. Acad. Sci. Paris, t. 272, p. 1169-1172 (1971)
+
+\end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{SUR LE PROBLÈME DE CHAÎNES D’IDÉAUX PREMIERS DANS LES ANNEAUX NOETHÉRIENS}\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{Sur le problème des chaînes d'idéaux premiers dans les anneaux noethériens}
+\label{sec:b}
+\section*{}
+
+Le problème des chaînes d’idéaux premiers consiste en l’étude des conditions moyennant lesquelles un anneau local noethérien est caténaire. L’étude de ce problème a été inaugurée vers 1956 par \emph{Nagata} qui a donné un certain nombre de critères intéressants. Malheureusement, bien que la plupart des résultats obtenus par \emph{Nagata} soient vrais, les démonstrations qu’il en a données, étaient presque toutes incomplètes. Il fallut attendre vers les années 1967-68 pour que \emph{Ratliff} reprenne et complète les démonstrations de \emph{Nagata}. D’ailleurs le plus beau résultat de toute la théorie a été obtenu par \emph{Ratliff} et énonce le fait suivant~: pour qu’un anneau local noethérien intègre soit universellement caténaire, il faut et il suffit que son complété $\hat{A}$ soit équidimensionnel. \emph{Ratliff} déduit de ce résultat qu’un anneau local noethérien hensélien caténaire est universellement caténaire. Il est d’ailleurs plausible qu’un anneau local noethérien hensélien soit universellement caténaire. La question est encore loin d’être tranchée malgré quelques progrès récents de \emph{Ratliff} dans cette direction. Dans la présente note, nous donnons quelques critères pour qu’un anneau local noethérien soit universellement caténaire. Certains de ces résultats offrent des réponses affirmatives à des questions posées par \emph{Grothendieck} et \emph{Nagata}. La plupart de ces résultats ont été obtenus entre 1970 et 1972 et communiqués au Colloque d’Algèbre Commutative de \emph{Rennes} (19--22 janvier 1972). Le théorème 1 qui apparaît pour la première fois ici, est probablement connu par \emph{Ratliff}.
+\vskip .3cm
+{
+Théorème 1. --- \it Soit $A$ un anneau local noethérien. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[i)] $A$ est équidimensionnel et caténaire.
+    \item[ii)] Pour tout idéal premier $p$ de $A$, on a $\dim(Ap) + \dim(A/P) = \dim(A)$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Corollaire. --- \it Tout $A$, anneau semi-local noethérien hensélien, tel que, pour tout idéal premier $p$ de $A$, on ait $\dim(Ap) + \dim(A/P) = \dim(A)$, est un anneau universellement caténaire.
+}
+\vskip .3cm
+{
+Théorème 2. --- \it Soit $A$ un anneau semi-local noethérien universellement caténaire. Alors, pour tout idéal $I$ de $A$, le séparé complété $\hat{A}$ de $A$ pour la topologie $I$-adique est un anneau universellement caténaire.
+}
+\vskip .3cm
+{
+Théorème 3. --- \it Soit $A$ un anneau local noethérien. On suppose que, pour tout anneau quotient intègre $B$ de $A$, l'anneau $B^{(1)} = \cap Bp$ où $p$ parcourt l'ensemble des idéaux premiers de hauteur $\leq 1$ de $B$, est une $B$-algèbre finie. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[i)] $A$ est caténaire.
+    \item[ii)] $A$ est universellement caténaire.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Théorème 4. --- \it Soit $A$ un anneau semi-local noethérien. On suppose que $A$ vérifie $(S_2)$ et que les fibres formelles de $A$ vérifient $(S_2)$. Alors $A$ est universellement caténaire.
+
+En particulier, si $A$ est local, $A$ est équidimensionnel.
+}
+\vskip .3cm
+{
+Théorème 5. --- \it Soit $A$ un anneau semi-local noethérien universellement japonais et $x$ un élément non diviseur de zéro appartenant au radical de \emph{Jacobson} de $A$.
+
+On suppose que $A/xA$ est universellement caténaire et vérifie $(S_2)$. Alors $A$ est universellement caténaire et vérifie $(S_2)$.
+}
+\vskip .3cm
+Remarque~: Dans l'énoncé précédent, on peut remplacer la condition~: ``$A$ est universellement japonais'' par ``les fibres formelles de $A$ vérifient $(S_1)$'', de même que dans le théorème suivant~:
+\vskip .3cm
+{
+Théorème 6. --- \it Soit $A$ un anneau local noethérien universellement japonais et $x$ un élément non diviseur de zéro appartenant au radical de \emph{Jacobson} de $A$. On suppose que $A/xA$ est universellement caténaire, équidimensionnel et vérifie $(S_1)$. Alors $A$ est universellement caténaire, équidimensionnel et vérifie $(S_1)$.
+}
+\vskip .3cm
+{
+Théorème 7. --- \it Soit $A$ un anneau local noethérien unibranche et universellement japonais. On suppose que la fibre formelle de $A$ au point générique de $\Spec(A)$ est normale. Alors $A$ est universellement caténaire.
+}
+\vskip .3cm
+{
+Corollaire 1. --- \it Soit $A$ un anneau semi-local noethérien hensélien universellement japonais. On suppose que les fibres formelles de $A$ aux points génériques de $\Spec(A)$, sont normales. Alors $A$ est universellement caténaire.
+}
+\vskip .3cm
+{
+Corollaire 2. --- \it Soit $A$ un anneau local noethérien intègre et universellement japonais. On suppose que la fibre formelle de $A$ au point générique de $\Spec(A)$ est normale. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[i)] $A$ est universellement caténaire.
+    \item[ii)] Pour toute $A$-algèbre finie monogène $B$ contenue dans le corps des fractions de $A$ et tout idéal maximal $n$ de $B$, on a $\dim(B_n) = \dim(A).$
+    \item[iii)] Pour tout idéal maximal $n$ de la clôture intégrale de $A$ on a~: $\dim(A_n) = \dim(A).$
+\end{enumerate}
+}
+Dans le cas général, on a le théorème suivant~:
+\vskip .3cm
+{
+Théorème 8. --- \it Soit $A$ un anneau noethérien. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[i)] $A$ est universellement caténaire.
+    \item[ii)] L'anneau des polynômes $A[X]$ est caténaire.
+    \item[iii)] Pour tout idéal maximal $n$ de l'anneau des polynômes $B = A[X]$ qui est au-dessus d'un idéal maximal de $A$, l'anneau local $B_n$ est caténaire.
+\end{enumerate}
+Si $A$ est un anneau local intègre, ces conditions sont équivalentes aux suivantes~:
+\begin{enumerate}    
+    \item[iv)] Toute $A$-algèbre finie monogène $B$ qui est intègre, et dont le corps des fractions est une extension séparable de $A$, est caténaire et, pour tout idéal maximal $n$ de $B$, on a : $\dim(B_n) = \dim(A).$
+    \item[v)] Pour toute $A$-algèbre locale intègre et essentiellement de type fini $B$ qui contient $A$ et domine $A$, on a : $\dim(A) + \deg \mathrm{tr}_k K' = \dim(B) \neq \deg \mathrm{tr}_k k'$, où $K$ et $K'$ désignent respectivement les corps des fractions de $A$ et $B$ et $k$ et $k'$ désignent respectivement les corps résiduels de $A$ et $B$ (formule des dimensions).
+    \item[vi)] La conclusion de v) est vraie lorsque $K' = K$, autrement dit, pour toute $A$-algèbre locale essentiellement de type fini $B$, contenue dans le corps des fractions de $A$ et qui domine $A$, on a $\dim(A) = \dim(B) + \deg\mathrm{tr}_k k'$, où $k$ et $k'$ désignent respectivement les corps résiduels de $A$ et de $B$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Théorème 9. --- \it Soient $A$ un anneau local noethérien intègre, $S = \Spec(A)$ et $s$ le point fermé de $S$. Soient $X$ le schéma obtenu en faisant éclater un fermé défini par un système de paramètres de $A$ et $f : X \rightarrow S$ le morphisme canonique. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[i)] $A$ est universellement caténaire,
+    \item[ii)] Pour tout point $x \in f^{-1}(s)$, tel que $\dim(\mathcal{O}_{X,x}) \geq 2$ et pour tout idéal maximal $n$ dans la clôture intégrale $\overline{B}$ de $B = \mathcal{O}_{X,x}$, on a $\dim(\overline{B}_n) \geq 2$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Théorème 10. --- \it Soit $A$ un anneau local noethérien intègre. Alors les conditions suivantes sont équivalentes :
+\begin{enumerate}
+    \item[i)] $A$ est universellement caténaire et son complété $\hat{A}$ vérifie $(S_1)$.
+    \item[ii)] Si $B$ est une $A$-algèbre locale essentiellement de type fini contenue dans le corps des fractions de $A$ qui domine $A$, alors l'anneau $B^{(1)} = \cap B_p$, où $p$ parcourt l'ensemble des idéaux premiers de hauteur $\leq 1$ de $B$, est une $B$-algèbre finie.
+\end{enumerate}
+}
+\vskip .3cm
+En combinant le théorème 8 avec les contre-exemples de \emph{Nagata} (cf. [3] sur le problème des chaînes d'idéaux premiers) on obtient~:
+\vskip .3cm
+{
+Théorème 11. --- \it Il existe un anneau local noethérien intègre de dimension 3 contenant un corps et dont les fibres formelles sont géométriquement régulières, qui n'est pas caténaire.
+}
+\vskip .3cm
+Un autre contre-exemple de \emph{Grothendieck} (cf. [2]) montre que, dans l'énoncé du théorème 11, on peut passer de l'hypothèse~: ``$A$ contient un corps''.
+\vskip .3cm
+Remarque~: Il est plausible que le théorème 7, ainsi que ses corollaires 1 et 2, soient vrais sans les hypothèses faites sur $A$. Dans son article [4], \emph{Nagata} affirme que la condition (i) du corollaire 2 du théorème 7, pour un anneau local noethérien intègre, est équivalente à la condition (iii)~: ``$\overline{A}$ est caténaire''.
+
+Mais sa démonstration nous paraît incomplète. On a cependant le résultat suivant~:
+\vskip .3cm
+{
+Théorème 12. --- \it Soit $A$ un anneau local noethérien intègre. Alors les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+    \item[i)] $A$ est universellement caténaire,
+    \item[ii)] $A$ est caténaire et il n'existe qu'un nombre fini d'idéaux premiers $P$ de $A$, tels que $\dim(A/P) \geq 2$ et tels qu'il existe un idéal maximal $n$ dans la clôture intégrale $\overline{B}$ de $B = A/P$, tel que $\dim(\overline{B}_n) = 1$.
+\end{enumerate}
+}
+\vskip .3cm
+{
+Corollaire (Ratliff). --- \it Tout anneau semi-local noethérien hensélien caténaire est universellement caténaire.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{NOTE}\thispagestyle{empty}
+\addcontentsline{toc}{section}{Note}
+\label{sec:n2}
+\section*{}
+
+Le théorème 1 apparaît pour la première fois, à notre connaissance, ici (Il semblerait cependant qu’il soit connu de \emph{Ratliff}). Sa démonstration se fait par récurrence sur $n = \dim(A)$ et s’appuie sur le fait suivant~: Si $x$ est un élément du radical de \emph{Jacobson} de $A$ n’appartenant à aucun idéal premier minimal de $A$, $\dim(A / xA) = \dim(A) - 1$
+
+Le corollaire du théorème 1 découle du fameux théorème de \emph{Ratliff} qui dit que tout anneau local noethérien henselien caténaire est universellement caténaire (cf. notre article ``Anneaux hensenliens et conditions de chaînes, I'', Bull. Soc. Math.  France, t.98, 1970, p.9–31).
+
+Le théorème 2 découle du théorème selon lequel tout anneau de séries formelles à un nombre fini de variables sur un anneau noethérien universellement caténaire est universellement caténaire (cf. notre article ``Anneaux hensenliens et conditions de chaînes, I'', Bull. Soc. Math. France, t.98, 1970, p.9–31).
+
+Le théorème 3 est une réponse affirmative à une question de \emph{Grothendieck}. Il a été prouvé dans notre article ``Anneaux hensenliens et conditions de chaînes, IV'' (C. Rend. Acad. Sci. Paris, t.271, 1970, p.120–121).
+
+Les théorèmes 4, 5 et 6 ont été éprouvés dans notre article ``Sur la théorie des anneaux excellents en caractéristique $p$'', (Bull. Soc. Math., t.96, 1972, p.193–198).
+
+Le théorème 7 découle du théorème de normalité analytique (cf. notre exposé au Colloque d’Algèbre de \emph{Rennes}, 19–22 janvier 1972).
+
+Le théorème 8 a été démontré dans notre article ``Anneaux hensenliens et conditions de chaînes, III''~: la formule des dimensions (C. Rend. Acad. Sci. Paris, t.270, 1970, p.696–698).
+
+Les théorèmes 9, 10 et 12 découlent d’un théorème de Madame \emph{Flexor} (cf. notre article ``Anneaux hensenliens et conditions de chaînes, II'', la formule des dimensions, C. Rend. Acad. Sci. Paris, t.270, 1970, p.696–698).
+
+
+%End
