@@ -37,11 +37,9 @@
     filecolor=[RGB]{61,82,62},
     urlcolor=[RGB]{61,82,62},
     citecolor=[RGB]{61,82,62},
-    pdftitle={Seydi, Hamet. Sur deux problèmes d'Algèbre Commutative. Thèse. Sc. math. Paris XI-Orsay. 1973. No. 1178. Transcription by M. Carmona et al. Draft},
-    pdfauthor={Alexander Grothendieck},
+    pdftitle={Seydi, Hamet. Sur deux problèmes d'Algèbre Commutative},
     pdflang={fr}
 }
-
 \usepackage{bookmark}
     %\usepackage{csquotes}
     \usepackage{etoc}
@@ -119,20 +117,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	% arrows
-	\newcommand{\xto}{\xrightarrow}
-	\renewcommand{\to}{\longrightarrow}
-	\def\rinto{\HorizontalMap\rthooka-\empty-\rhla}
-	\def\linto{\HorizontalMap\lhla-\empty-\lthooka}
-	\def\dinto{\VerticalMap\dthookb|\empty|\dhla}
-	\def\uinto{\VerticalMap\uhla|\empty|\uthookb}
-
-	% categories
-	\def\cC{{\cal C}}
-	\def\cF{{\cal F}}
-	\def\cG{{\cal G}}
-	\def\cH{{\cal H}}
-	\def\cU{{\cal U}}
+	% symbols
+	\renewcommand{\emptyset}{\varnothing}
+	\renewcommand{\phi}{\varphi}
+	\newcommand{\isom}{\simeq}
+	\newcommand*\isommap{\xlongrightarrow{\sim}}
 
 	% operators
 	\DeclareMathOperator{\Hom}{Hom}
@@ -143,25 +132,9 @@
   \DeclareMathOperator{\Der}{Der}
 	\DeclareMathOperator{\Spec}{Spec}
 
-	% symbols
-	\renewcommand{\emptyset}{\varnothing}
-	\renewcommand{\phi}{\varphi}
-	\newcommand{\und}{\underline}
-
-	% environments
-	\theoremstyle{plain}
-		\newtheorem{lemma}{Lemma}[section]
-		\newtheorem{corollary}[lemma]{Corollary}
-		\newtheorem{proposition}[lemma]{Proposition}
-		\newtheorem{theorem}[lemma]{Theorem}
-		\newtheorem*{theorem*}{Theorem}
-		\newtheorem*{corollary*}{Corollary}
-		\newtheorem{conjecture}{Conjecture}
-	\theoremstyle{definition}
-		\newtheorem{definition}[lemma]{Definition}
-		\newtheorem{example}[lemma]{Example}
-		\newtheorem{remark}[lemma]{Remark}
-		\newtheorem{construction}[lemma]{Construction}
+	\newcommand*\isomlong{%
+	  \xlongrightarrow{\raisebox{-0.2 em}{\smash{\ensuremath{\sim}}}}%
+	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -198,6 +171,14 @@
 \vspace*{\fill}
 \noindent\makebox[\linewidth]{\rule{4in}{0.01in}}
 %\vspace*{\fill}
+
+\newpage 
+\thispagestyle{empty}
+
+\null\vfill
+\noindent\begin{minipage}{\textwidth}
+This project, involving the transcription of H. Seydi's thesis, was carried out under the direction of Mateo Carmona with the collaboration of Fan Xuanrui. The transcription aims to be as faithful as possible to the original. This edition should be regarded as provisional; remarks, comments, and corrections are welcome. More details are available at: \url{https://github.com/gmateocarmona/sur-deux-problemes-dalgebre-commutative}
+\end{minipage}
 
 \newpage
 
@@ -239,51 +220,27 @@ DOUADY & \\
 \end{center}
 \vspace*{\fill}
 
-\newpage 
-\thispagestyle{empty}
-
-\begin{center}
-Sur deux problèmes d'Algèbre Commutative, Hamet Seydi
-\end{center}
-
-\vspace*{\fill}
-
-This transcription is derived from an unpublished scan. This project was carried out by Mateo Carmona in collaboration with Fan Xuanrui.  
-
-\bigskip
-
-How to cite:
-
-Seydi, Hamet. \emph{Sur deux problèmes d'Algèbre Commutative}. Thèse. Sc. math. Paris XI-Orsay. 1973. N$^\circ$ 1178. Transcription by M. Carmona et al. Draft, \monthname[\the\month] \the\year.
-
 \newpage
 \thispagestyle{empty}
 \mbox{}
 
 %\pagestyle{fancyplain}
 
-%\renewcommand{\contentsname}{SOMMAIRE}
-%\tableofcontents\thispagestyle{empty}
+\renewcommand{\contentsname}{TABLE DES MATIÈRES}
+\tableofcontents\thispagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{0}
 
 \include{seydi}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-%\thispagestyle{empty}
 \mbox{}
 \thispagestyle{empty}
-%\begin{tikzpicture}[remember picture,overlay]
-%    \draw[line width=10pt,color=DarkKhaki]
-%        ([shift={(-0.5\pgflinewidth,-0.5\pgflinewidth)}]current page.north west)
-%        rectangle
-%        ([shift={(0.5\pgflinewidth,0.5\pgflinewidth)}]current page.south east);
-%\end{tikzpicture}
 
 \end{document}
-
 
 
 %End
